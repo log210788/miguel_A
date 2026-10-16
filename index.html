@@ -1,0 +1,2075 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miguel A. | Executive & Conversational English Studio — Lesson 01</title>
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif), Plus Jakarta Sans (Modern UI), JetBrains Mono (IPA & Rhythm) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Chart.js for Speaking Diagnostic Radar -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <!-- Popper & Tippy.js for Interactive Linguistic Tooltips -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+
+  <!-- Canvas Confetti for Milestones & Quiz -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            terra: {
+              50: '#fdf6f3',
+              100: '#fbeae3',
+              200: '#f6d5c8',
+              300: '#eeb5a0',
+              400: '#e28b6d',
+              500: '#d46643',
+              600: '#c04e2b',
+              700: '#9f3e22',
+              800: '#833520',
+              900: '#6c2e1d',
+            },
+            pine: {
+              50: '#f2f7f5',
+              100: '#dfece7',
+              200: '#c2dad1',
+              300: '#98bfb2',
+              400: '#6b9e8f',
+              500: '#4b8273',
+              600: '#39675b',
+              700: '#2f534a',
+              800: '#28433c',
+              900: '#223833',
+            },
+            sand: {
+              50: '#faf7f2',
+              100: '#f3ede2',
+              200: '#e6dac5',
+              300: '#d5c1a0',
+              400: '#c2a478',
+              500: '#b38c59',
+              600: '#9d7448',
+            },
+            slateink: {
+              800: '#1e293b',
+              900: '#0f172a',
+              950: '#090d16',
+            }
+          },
+          boxShadow: {
+            'editorial': '0 14px 40px -10px rgba(159, 62, 34, 0.08), 0 4px 14px -2px rgba(15, 23, 42, 0.05)',
+            'editorial-hover': '0 22px 48px -12px rgba(159, 62, 34, 0.14), 0 6px 20px -4px rgba(15, 23, 42, 0.07)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #faf7f2;
+      background-image:
+        radial-gradient(at 0% 0%, rgba(251, 234, 227, 0.75) 0px, transparent 48%),
+        radial-gradient(at 100% 15%, rgba(223, 236, 231, 0.7) 0px, transparent 48%),
+        radial-gradient(at 50% 90%, rgba(243, 237, 226, 0.65) 0px, transparent 50%);
+      background-attachment: fixed;
+      color: #0f172a;
+    }
+
+    .glass-nav {
+      background: rgba(250, 247, 242, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .editorial-card {
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid #e6dac5;
+      border-radius: 1.5rem;
+      box-shadow: 0 14px 40px -10px rgba(159, 62, 34, 0.07), 0 4px 14px -2px rgba(15, 23, 42, 0.04);
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .editorial-card:hover {
+      box-shadow: 0 20px 45px -12px rgba(159, 62, 34, 0.13), 0 6px 18px -4px rgba(15, 23, 42, 0.06);
+    }
+
+    /* 3D Flip Card Styles */
+    .perspective-1000 { perspective: 1000px; }
+    .transform-style-3d {
+      transform-style: preserve-3d;
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .backface-hidden {
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+    .rotate-y-180 { transform: rotateY(180deg); }
+
+    @keyframes metronomePulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.12); background-color: #c04e2b; color: white; }
+    }
+    .beat-active {
+      animation: metronomePulse 0.65s ease-in-out;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: #f3ede2; }
+    ::-webkit-scrollbar-thumb { background: #d5c1a0; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #c04e2b; }
+
+    @media print {
+      .no-print { display: none !important; }
+      body { background: white !important; }
+      .editorial-card { break-inside: avoid; box-shadow: none !important; border: 1px solid #ddd !important; }
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-terra-200 selection:text-slateink-900 min-h-screen">
+
+  <!-- ===================================================================== -->
+  <!-- TOP STICKY GLASS NAVIGATION BAR                                       -->
+  <!-- ===================================================================== -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-sand-200 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      
+      <!-- Brand / Student Identity -->
+      <div class="flex items-center space-x-3.5">
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-terra-600 via-terra-700 to-slateink-900 flex items-center justify-center text-white font-serif text-2xl font-bold shadow-md shadow-terra-600/20">
+          M
+        </div>
+        <div>
+          <div class="flex items-center space-x-2">
+            <h1 class="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-slateink-900">Miguel's English Studio</h1>
+            <span class="hidden sm:inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-terra-100 text-terra-800 border border-terra-200">
+              <i class="fa-solid fa-mountain-sun text-terra-600 mr-1.5"></i> Lesson 01
+            </span>
+          </div>
+          <p class="text-xs text-stone-500 font-medium">Business Analyst • British Rhythm, Space &amp; Vocabulary Vault</p>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="hidden xl:flex items-center space-x-1 text-xs font-semibold text-stone-600">
+        <a href="#overview" class="px-3 py-2 rounded-xl hover:bg-terra-50 hover:text-terra-700 transition-all">Diagnostic</a>
+        <a href="#rhythm" class="px-3 py-2 rounded-xl hover:bg-terra-50 hover:text-terra-700 transition-all">1. Rhythm Lab</a>
+        <a href="#spaces" class="px-3 py-2 rounded-xl hover:bg-terra-50 hover:text-terra-700 transition-all">2. Church of Light &amp; Spaces</a>
+        <a href="#ba-studio" class="px-3 py-2 rounded-xl hover:bg-terra-50 hover:text-terra-700 transition-all">3. BA Presentations</a>
+        <a href="#upgrades" class="px-3 py-2 rounded-xl hover:bg-terra-50 hover:text-terra-700 transition-all">4. Transcript Polish</a>
+        <a href="#vocabulary" class="px-3 py-2 rounded-xl hover:bg-terra-50 hover:text-terra-700 transition-all">5. Vocab (24)</a>
+        <a href="#flashcards" class="px-3 py-2 rounded-xl hover:bg-terra-50 hover:text-terra-700 transition-all">6. Flashcards</a>
+        <a href="#quiz" class="px-3.5 py-2 rounded-xl bg-terra-100 text-terra-800 hover:bg-terra-200 transition-all font-bold">
+          <i class="fa-solid fa-trophy mr-1"></i> Quiz
+        </a>
+      </nav>
+
+      <!-- Voice Accent, Speed Controls & Print -->
+      <div class="flex items-center space-x-2 no-print">
+        <div class="flex items-center space-x-1 bg-white border border-sand-200 rounded-full px-2.5 py-1.5 shadow-sm text-xs font-medium text-stone-600" data-tippy-content="Switch between British (Oxford) and American voice synthesis">
+          <button onclick="setVoiceAccent('en-GB')" id="accent-uk" class="px-2 py-0.5 rounded-full bg-slateink-900 text-white font-semibold transition-colors">🇬🇧 UK</button>
+          <button onclick="setVoiceAccent('en-US')" id="accent-us" class="px-2 py-0.5 rounded-full hover:bg-sand-100 transition-colors">🇺🇸 US</button>
+        </div>
+        <div class="hidden sm:flex items-center space-x-1 bg-white border border-sand-200 rounded-full px-2.5 py-1.5 shadow-sm text-xs font-medium text-stone-600" data-tippy-content="Adjust speaking speed for pronunciation drills">
+          <i class="fa-solid fa-gauge-high text-terra-600 mr-1"></i>
+          <button onclick="setSpeechRate(0.82)" id="rate-slow" class="px-2 py-0.5 rounded-full hover:bg-terra-50 transition-colors">0.85x</button>
+          <button onclick="setSpeechRate(1.0)" id="rate-normal" class="px-2 py-0.5 rounded-full bg-terra-600 text-white font-semibold transition-colors">1.0x</button>
+        </div>
+        <button onclick="window.print()" class="p-2.5 rounded-xl bg-white border border-sand-200 text-stone-600 hover:text-terra-600 hover:border-terra-300 shadow-sm transition-all" data-tippy-content="Print or Save as PDF">
+          <i class="fa-solid fa-print"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-16">
+
+    <!-- ===================================================================== -->
+    <!-- HERO SECTION & EXECUTIVE DIAGNOSTIC                                   -->
+    <!-- ===================================================================== -->
+    <section id="overview" class="space-y-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        
+        <!-- Left Column: Editorial Intro -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-terra-100/90 border border-terra-200 text-terra-800 text-xs font-semibold tracking-wide">
+            <span>🧗‍♂️ PERSONALIZED LESSON 01 STUDY PORTAL</span>
+            <span class="text-terra-400">•</span>
+            <span>OCTOBER 17, 2026</span>
+            <span class="text-terra-400">•</span>
+            <span>WITH LEWIS (OXFORD / HANOI)</span>
+          </div>
+
+          <h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-slateink-900 leading-[1.1] tracking-tight">
+            Mastering <span class="italic font-normal text-terra-600">Stress-Timed Rhythm,</span> Business Flow &amp; Everyday Small Talk.
+          </h2>
+
+          <p class="text-stone-600 text-base sm:text-lg leading-relaxed">
+            Great meeting you on Friday, <strong>Miguel</strong>! From your roots in <strong>Vitoria (Basque Country)</strong> to your life in <strong>Madrid</strong> with your girlfriend and your 6-year-old Malinois–Pointer mix, you bring awesome energy to conversation. Whether you're delivering your <strong>monthly Business Analyst presentations</strong>, discussing <strong>Tadao Ando's concrete architecture</strong>, or going for Friday <strong>indoor climbing, burgers, and beers</strong>, this interactive hub has all your tidied notes, pronunciation upgrades, and vocabulary ready to practice.
+          </p>
+
+          <!-- Personal Context Badges from Our Conversation -->
+          <div class="flex flex-wrap gap-2.5 pt-1">
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-white border border-sand-200 text-xs font-semibold text-stone-700 shadow-sm">
+              <i class="fa-solid fa-chart-line text-terra-600"></i> Business Analyst (5th Year • Remote)
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-white border border-sand-200 text-xs font-semibold text-stone-700 shadow-sm">
+              <i class="fa-solid fa-location-dot text-pine-600"></i> Basque Country $\rightarrow$ Madrid
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-white border border-sand-200 text-xs font-semibold text-stone-700 shadow-sm">
+              <i class="fa-solid fa-person-falling text-amber-600"></i> Indoor Climbing (3–4x / Week)
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-white border border-sand-200 text-xs font-semibold text-stone-700 shadow-sm">
+              <i class="fa-solid fa-motorcycle text-slateink-800"></i> Madrid Motorbike Rider
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-white border border-sand-200 text-xs font-semibold text-stone-700 shadow-sm">
+              <i class="fa-solid fa-dog text-terra-700"></i> 6yo Malinois &amp; Spanish Pointer Mix
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-white border border-sand-200 text-xs font-semibold text-stone-700 shadow-sm">
+              <i class="fa-solid fa-water text-pine-600"></i> Tranquil Mountain Streams
+            </span>
+          </div>
+
+          <!-- Quick Action Buttons -->
+          <div class="flex flex-wrap items-center gap-3 pt-2 no-print">
+            <button onclick="speakText('Hey Miguel! Welcome to your Lesson One study portal. Everything from our Friday session is tidied up right here: the Cats Eat Mice rhythm drill, business bottlenecks, Tadao Ando architecture, and all twenty-four vocabulary upgrades. Have a great weekend climbing and enjoy those Friday burgers and beers!')" class="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-terra-600 to-terra-700 hover:from-terra-700 hover:to-terra-800 text-white font-semibold text-sm shadow-lg shadow-terra-600/25 transition-all flex items-center space-x-2.5">
+              <i class="fa-solid fa-circle-play text-base"></i>
+              <span>Listen to Lewis's Audio Summary</span>
+            </button>
+            <a href="#rhythm" class="px-5 py-3.5 rounded-2xl bg-white border border-sand-300 hover:border-terra-500 text-slateink-900 font-semibold text-sm shadow-sm transition-all flex items-center space-x-2">
+              <i class="fa-solid fa-wave-square text-terra-600"></i>
+              <span>"Cats Eat Mice" Rhythm Lab</span>
+            </a>
+            <a href="#vocabulary" class="px-5 py-3.5 rounded-2xl bg-pine-50 border border-pine-200 hover:bg-pine-100 text-pine-900 font-semibold text-sm shadow-sm transition-all flex items-center space-x-2">
+              <i class="fa-solid fa-layer-group text-pine-600"></i>
+              <span>24-Word Vocab Vault</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Custom Editorial Illustration -->
+        <div class="lg:col-span-5">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white group">
+            <img src="images/miguel_hero.jpg"
+                 onerror="this.src='https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=1000&q=80'"
+                 alt="Miguel's Studio - Climbing Wall, Tadao Ando Concrete, Motorbike Helmet, Madrid Rooftops, Mountain Stream & Business Analyst Charts"
+                 class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="p-4 bg-gradient-to-r from-sand-50 via-white to-pine-50 border-t border-sand-200 flex items-center justify-between text-xs text-stone-600">
+              <span class="font-serif italic text-sm text-slateink-900 font-semibold">Climbing, Concrete, Madrid &amp; Tranquil Mountains</span>
+              <span class="text-terra-700 font-semibold">Lesson 01 Custom Art ✨</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Diagnostic Analysis & Radar Chart Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 pt-4">
+        
+        <!-- Left 7 Cols: Teacher's Conversation Analysis -->
+        <div class="lg:col-span-7 editorial-card p-6 sm:p-8 flex flex-col justify-between space-y-6">
+          <div>
+            <div class="flex items-center justify-between border-b border-sand-200 pb-4">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-widest text-terra-600">Lewis's Diagnostic Notes</span>
+                <h3 class="font-serif text-2xl sm:text-3xl font-bold text-slateink-900 mt-0.5">Your Lesson 01 Strengths &amp; Game Plan</h3>
+              </div>
+              <span class="w-10 h-10 rounded-2xl bg-terra-50 text-terra-600 flex items-center justify-center text-lg">
+                <i class="fa-solid fa-compass-drafting"></i>
+              </span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+              <!-- Strength 1 -->
+              <div class="p-4 rounded-2xl bg-pine-50/70 border border-pine-200/80 space-y-1.5">
+                <div class="flex items-center space-x-2 text-pine-700 font-bold text-xs uppercase tracking-wider">
+                  <i class="fa-solid fa-ear-listen"></i>
+                  <span>Strength 1: Sharp Rhythm Ear</span>
+                </div>
+                <p class="text-xs sm:text-sm text-stone-700 leading-relaxed">
+                  In our <em>"Cats Eat Mice"</em> test, you immediately noticed that I linked <strong>"The cats"</strong> as a single unit and divided the sentence into two rhythmic beats. Spotting that difference is 50% of the battle!
+                </p>
+              </div>
+
+              <!-- Strength 2 -->
+              <div class="p-4 rounded-2xl bg-pine-50/70 border border-pine-200/80 space-y-1.5">
+                <div class="flex items-center space-x-2 text-pine-700 font-bold text-xs uppercase tracking-wider">
+                  <i class="fa-solid fa-comments"></i>
+                  <span>Strength 2: Natural Small Talk</span>
+                </div>
+                <p class="text-xs sm:text-sm text-stone-700 leading-relaxed">
+                  You naturally keep conversations flowing by asking genuine questions (<em>"Where are you from?"</em>, <em>"How is life in Vietnam?"</em>, <em>"With a motorbike?"</em>) and describing unfamiliar visual images without freezing.
+                </p>
+              </div>
+
+              <!-- Upgrade 1 -->
+              <div class="p-4 rounded-2xl bg-terra-50/70 border border-terra-200/80 space-y-1.5">
+                <div class="flex items-center space-x-2 text-terra-700 font-bold text-xs uppercase tracking-wider">
+                  <i class="fa-solid fa-bolt"></i>
+                  <span>Upgrade 1: "Eating" Grammar Words</span>
+                </div>
+                <p class="text-xs sm:text-sm text-stone-700 leading-relaxed">
+                  Because Spanish is syllable-timed, you currently pronounce every syllable cleanly. We will practice compressing helper words (<code class="font-mono text-xs">might have</code> $\rightarrow$ <code class="font-mono text-xs">/ˈmaɪtəv/</code>) while stressing key nouns.
+                </p>
+              </div>
+
+              <!-- Upgrade 2 -->
+              <div class="p-4 rounded-2xl bg-amber-50/80 border border-amber-200/80 space-y-1.5">
+                <div class="flex items-center space-x-2 text-amber-800 font-bold text-xs uppercase tracking-wider">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <span>Upgrade 2: Monthly BA Presentations</span>
+                </div>
+                <p class="text-xs sm:text-sm text-stone-700 leading-relaxed">
+                  To make your 1–2x/month English presentations effortless—and prepare you for English-first companies—we'll run <strong>presentation drills</strong> and high-pressure games like <em>Keep Talking &amp; Nobody Explodes</em>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slateink-900 text-stone-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+            <div class="flex items-center space-x-3">
+              <span class="text-xl">🎯</span>
+              <span><strong>Your 3 Core Goals:</strong> (1) Fluency &amp; Stress-Timed Rhythm, (2) Business Analyst &amp; Presentation Vocabulary, and (3) Everyday Small Talk to connect with new people.</span>
+            </div>
+            <a href="#ba-studio" class="shrink-0 px-3.5 py-1.5 rounded-xl bg-terra-600 hover:bg-terra-500 text-white font-semibold transition-all">
+              BA Script Builder →
+            </a>
+          </div>
+        </div>
+
+        <!-- Right 5 Cols: Chart.js Speaking Profile Radar -->
+        <div class="lg:col-span-5 editorial-card p-6 sm:p-8 flex flex-col justify-between">
+          <div class="border-b border-sand-200 pb-3 flex items-center justify-between">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-pine-600">Diagnostic Radar</span>
+              <h3 class="font-serif text-2xl font-bold text-slateink-900">Miguel's Speaking Roadmap</h3>
+            </div>
+            <span class="text-xs px-2.5 py-1 rounded-full bg-pine-100 text-pine-800 font-semibold">Lesson 1 vs. Target</span>
+          </div>
+          <div class="my-auto py-4 flex items-center justify-center">
+            <canvas id="miguelRadarChart" class="max-h-[280px]"></canvas>
+          </div>
+          <p class="text-[11px] text-stone-500 text-center italic">
+            Your conversational curiosity and listening perception are already strong—our drills will rapidly elevate your connected-speech rhythm, active vocabulary, and monthly presentation confidence!
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- MODULE 1: THE "CATS EAT MICE" STRESS-TIMED RHYTHM LAB                 -->
+    <!-- ===================================================================== -->
+    <section id="rhythm" class="editorial-card p-6 sm:p-10 space-y-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-sand-200 pb-6 gap-4">
+        <div class="space-y-2">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-terra-100 text-terra-800 text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-drum"></i>
+            <span>Module 01 • How Native Speakers "Cheat" Syllables</span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slateink-900">
+            The "Cats Eat Mice" Stress-Timed Rhythm Lab
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base max-w-3xl">
+            In Spanish, every syllable gets almost equal time (<em>syllable-timed</em>). In English, even as each sentence below adds more words, <strong>all 4 sentences take almost the exact same amount of time to say</strong>! How? Because we stress the 3 anchor words (<code class="px-1.5 py-0.5 bg-terra-50 text-terra-700 rounded font-mono text-xs">CATS</code> • <code class="px-1.5 py-0.5 bg-terra-50 text-terra-700 rounded font-mono text-xs">EAT</code> • <code class="px-1.5 py-0.5 bg-terra-50 text-terra-700 rounded font-mono text-xs">MICE</code>) and "eat" the small grammar words in between.
+          </p>
+        </div>
+        <button onclick="playAllRhythmLevels()" class="no-print shrink-0 px-5 py-3 rounded-2xl bg-slateink-900 hover:bg-slateink-800 text-white text-xs sm:text-sm font-semibold shadow-md transition-all flex items-center space-x-2">
+          <i class="fa-solid fa-play"></i>
+          <span>Play All 4 Sentences in Rhythm</span>
+        </button>
+      </div>
+
+      <!-- Miguel's 2 Spot-On Observations Banner -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="p-4 rounded-2xl bg-pine-50/80 border border-pine-200 flex items-start space-x-3.5">
+          <div class="w-9 h-9 rounded-xl bg-pine-600 text-white flex items-center justify-center shrink-0 font-bold text-sm">1</div>
+          <div class="text-xs sm:text-sm text-stone-700">
+            <strong class="text-pine-900 block">Your Observation #1 in Class (Linking):</strong>
+            <em>"The first two words, you say them quite like if it was just one—'the-cats'—and I separated them more."</em>
+            <span class="block text-pine-700 font-medium mt-1">✔ Spot on! <code class="font-mono">The</code> becomes a tiny schwa <code class="font-mono">/ðə/</code> glued directly onto <strong>CATS</strong>: <code class="font-mono">/ðəˈkæts/</code>.</span>
+          </div>
+        </div>
+        <div class="p-4 rounded-2xl bg-pine-50/80 border border-pine-200 flex items-start space-x-3.5">
+          <div class="w-9 h-9 rounded-xl bg-pine-600 text-white flex items-center justify-center shrink-0 font-bold text-sm">2</div>
+          <div class="text-xs sm:text-sm text-stone-700">
+            <strong class="text-pine-900 block">Your Observation #2 in Class (Chunking):</strong>
+            <em>"It's like you divide it into two parts: 'The cats ... eat mice'."</em>
+            <span class="block text-pine-700 font-medium mt-1">✔ Exactly right! Stressing <strong>THE CATS</strong> creates a rhythmic wave that carries you through the verb onto <strong>MICE</strong>.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Interactive Rhythm Level Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        
+        <!-- Sentence 1 -->
+        <div id="rhythm-card-1" class="p-5 rounded-2xl bg-sand-50/70 border border-sand-200 hover:border-terra-400 transition-all flex flex-col justify-between space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-lg bg-white border border-sand-200 text-terra-700 font-mono text-xs font-bold">Sentence 1 • 3 Words (3 Syllables)</span>
+            <button onclick="speakRhythmCard(1, 'Cats... eat... mice.')" class="px-3.5 py-1.5 rounded-xl bg-terra-600 hover:bg-terra-700 text-white text-xs font-semibold flex items-center space-x-1.5 shadow-sm transition-all">
+              <i class="fa-solid fa-volume-high"></i>
+              <span>Listen</span>
+            </button>
+          </div>
+          <div class="flex items-center justify-around py-3.5 px-2 bg-white rounded-xl border border-sand-200 text-center">
+            <div class="space-y-1">
+              <span class="inline-block px-3.5 py-1.5 rounded-xl bg-slateink-900 text-white font-bold text-base sm:text-lg">CATS</span>
+              <span class="block text-[10px] font-mono text-stone-400">BEAT 1</span>
+            </div>
+            <span class="text-stone-300 font-mono">•••</span>
+            <div class="space-y-1">
+              <span class="inline-block px-3.5 py-1.5 rounded-xl bg-slateink-900 text-white font-bold text-base sm:text-lg">EAT</span>
+              <span class="block text-[10px] font-mono text-stone-400">BEAT 2</span>
+            </div>
+            <span class="text-stone-300 font-mono">•••</span>
+            <div class="space-y-1">
+              <span class="inline-block px-3.5 py-1.5 rounded-xl bg-slateink-900 text-white font-bold text-base sm:text-lg">MICE</span>
+              <span class="block text-[10px] font-mono text-stone-400">BEAT 3</span>
+            </div>
+          </div>
+          <p class="text-xs text-stone-600">
+            <strong>Base Metronome:</strong> Three content words, three steady beats (<code class="font-mono">/ˈkæts ˈiːt ˈmaɪs/</code>).
+          </p>
+        </div>
+
+        <!-- Sentence 2 -->
+        <div id="rhythm-card-2" class="p-5 rounded-2xl bg-sand-50/70 border border-sand-200 hover:border-terra-400 transition-all flex flex-col justify-between space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-lg bg-white border border-sand-200 text-terra-700 font-mono text-xs font-bold">Sentence 2 • 4 Words (Still 3 Beats!)</span>
+            <button onclick="speakRhythmCard(2, 'The cats... eat... mice.')" class="px-3.5 py-1.5 rounded-xl bg-terra-600 hover:bg-terra-700 text-white text-xs font-semibold flex items-center space-x-1.5 shadow-sm transition-all">
+              <i class="fa-solid fa-volume-high"></i>
+              <span>Listen</span>
+            </button>
+          </div>
+          <div class="flex items-center justify-around py-3.5 px-2 bg-white rounded-xl border border-sand-200 text-center">
+            <div class="space-y-1">
+              <div class="flex items-center space-x-1">
+                <span class="text-xs text-terra-700 font-mono bg-terra-50 px-1.5 py-0.5 rounded">thə-</span>
+                <span class="inline-block px-3.5 py-1.5 rounded-xl bg-slateink-900 text-white font-bold text-base sm:text-lg">CATS</span>
+              </div>
+              <span class="block text-[10px] font-mono text-stone-400">ONE LINKED UNIT</span>
+            </div>
+            <span class="text-stone-300 font-mono">•••</span>
+            <div class="space-y-1">
+              <span class="inline-block px-3.5 py-1.5 rounded-xl bg-slateink-900 text-white font-bold text-base sm:text-lg">EAT</span>
+              <span class="block text-[10px] font-mono text-stone-400">BEAT 2</span>
+            </div>
+            <span class="text-stone-300 font-mono">•••</span>
+            <div class="space-y-1">
+              <span class="inline-block px-3.5 py-1.5 rounded-xl bg-slateink-900 text-white font-bold text-base sm:text-lg">MICE</span>
+              <span class="block text-[10px] font-mono text-stone-400">BEAT 3</span>
+            </div>
+          </div>
+          <p class="text-xs text-stone-600">
+            <strong>Linking Rule:</strong> Never pause between <em>The</em> and <em>cats</em>. Say <code class="font-mono text-terra-700">thə-CATS</code> as one single word!
+          </p>
+        </div>
+
+        <!-- Sentence 3 -->
+        <div id="rhythm-card-3" class="p-5 rounded-2xl bg-sand-50/70 border border-sand-200 hover:border-terra-400 transition-all flex flex-col justify-between space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-lg bg-white border border-sand-200 text-terra-700 font-mono text-xs font-bold">Sentence 3 • 6 Words (Still 3 Beats!)</span>
+            <button onclick="speakRhythmCard(3, 'The cats... will eat... the mice.')" class="px-3.5 py-1.5 rounded-xl bg-terra-600 hover:bg-terra-700 text-white text-xs font-semibold flex items-center space-x-1.5 shadow-sm transition-all">
+              <i class="fa-solid fa-volume-high"></i>
+              <span>Listen</span>
+            </button>
+          </div>
+          <div class="flex items-center justify-around py-3.5 px-2 bg-white rounded-xl border border-sand-200 text-center">
+            <div class="space-y-1">
+              <div class="flex items-center space-x-1">
+                <span class="text-xs text-stone-400 font-mono">thə-</span>
+                <span class="inline-block px-3 py-1.5 rounded-xl bg-slateink-900 text-white font-bold text-base sm:text-lg">CATS</span>
+              </div>
+              <span class="block text-[10px] font-mono text-stone-400">BEAT 1</span>
+            </div>
+            <div class="space-y-1">
+              <div class="flex items-center space-x-1">
+                <span class="text-xs text-stone-500 font-mono bg-stone-100 px-1.5 py-0.5 rounded">wəl-</span>
+                <span class="inline-block px-3 py-1.5 rounded-xl bg-slateink-900 text-white font-bold text-base sm:text-lg">EAT</span>
+              </div>
+              <span class="block text-[10px] font-mono text-stone-400">BEAT 2</span>
+            </div>
+            <div class="space-y-1">
+              <div class="flex items-center space-x-1">
+                <span class="text-xs text-stone-500 font-mono bg-stone-100 px-1.5 py-0.5 rounded">thə-</span>
+                <span class="inline-block px-3 py-1.5 rounded-xl bg-slateink-900 text-white font-bold text-base sm:text-lg">MICE</span>
+              </div>
+              <span class="block text-[10px] font-mono text-stone-400">BEAT 3</span>
+            </div>
+          </div>
+          <p class="text-xs text-stone-600">
+            <strong>Compression Rule:</strong> <code class="font-mono text-terra-700">will</code> and <code class="font-mono text-terra-700">the</code> shrink so the main beats stay at the exact same speed.
+          </p>
+        </div>
+
+        <!-- Sentence 4: The Big Breakthrough -->
+        <div id="rhythm-card-4" class="p-5 rounded-2xl bg-gradient-to-br from-terra-50 via-white to-amber-50 border-2 border-terra-500 shadow-md flex flex-col justify-between space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-lg bg-terra-600 text-white font-mono text-xs font-bold">⭐ Sentence 4 • The Native "Cheat Code"</span>
+            <button onclick="speakRhythmCard(4, 'The cats... might have eaten... the mice.')" class="px-3.5 py-1.5 rounded-xl bg-terra-600 hover:bg-terra-700 text-white text-xs font-semibold flex items-center space-x-1.5 shadow-sm transition-all">
+              <i class="fa-solid fa-volume-high"></i>
+              <span>Listen</span>
+            </button>
+          </div>
+          <div class="flex flex-wrap items-center justify-around gap-2 py-3.5 px-2 bg-white rounded-xl border border-terra-200 text-center">
+            <div class="space-y-1">
+              <div class="flex items-center space-x-1">
+                <span class="text-xs text-stone-400 font-mono">thə-</span>
+                <span class="inline-block px-3 py-1.5 rounded-xl bg-terra-600 text-white font-bold text-base sm:text-lg shadow-sm">CATS</span>
+              </div>
+              <span class="block text-[10px] font-mono text-terra-700 font-bold">HEAVY STRESS</span>
+            </div>
+            <div class="space-y-1">
+              <div class="flex items-center space-x-1">
+                <span class="text-xs text-amber-900 font-mono bg-amber-100 px-2 py-0.5 rounded font-bold" data-tippy-content="Don't say 'have' with an H! Say 'might-of' (/ˈmaɪtəv/)">might've</span>
+                <span class="inline-block px-3 py-1.5 rounded-xl bg-slateink-900 text-white font-bold text-base sm:text-lg shadow-sm" data-tippy-content="Drop the hard T in 'eaten' -> /ˈiːʔn/">EA'N</span>
+              </div>
+              <span class="block text-[10px] font-mono text-amber-800 font-bold">/ˈmaɪtəv ˈiːʔn/</span>
+            </div>
+            <div class="space-y-1">
+              <div class="flex items-center space-x-1">
+                <span class="text-xs text-stone-400 font-mono">thə-</span>
+                <span class="inline-block px-3 py-1.5 rounded-xl bg-terra-600 text-white font-bold text-base sm:text-lg shadow-sm">MICE</span>
+              </div>
+              <span class="block text-[10px] font-mono text-terra-700 font-bold">LANDING BEAT</span>
+            </div>
+          </div>
+          <p class="text-xs text-stone-700 leading-relaxed">
+            <strong>Lewis's Breakdown from Line 73:</strong> Stress <strong>CATS</strong>, then "eat" the middle syllables: don't say a full <em>"have"</em>—turn it into <em>"of"</em> (<code class="font-mono text-terra-700 font-bold">might've</code>), soften the <code class="font-mono">/t/</code> in <code class="font-mono text-terra-700 font-bold">ea'n</code>, and land cleanly on <strong>the MICE</strong>!
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Built-in Browser Voice Practice Studio -->
+      <div class="p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-pine-50 via-white to-terra-50 border border-pine-200 flex flex-col md:flex-row items-center justify-between gap-4 no-print">
+        <div class="flex items-start space-x-3.5">
+          <div class="w-11 h-11 rounded-2xl bg-pine-700 text-white flex items-center justify-center text-lg shrink-0 shadow-sm">
+            <i class="fa-solid fa-microphone-lines"></i>
+          </div>
+          <div>
+            <h4 class="font-serif text-xl font-bold text-slateink-900">Miguel's Self-Check Voice Mirror</h4>
+            <p class="text-xs sm:text-sm text-stone-600">
+              Test your webcam/headset mic right here! Click <strong>Record My Voice</strong>, say all 4 <em>"Cats Eat Mice"</em> sentences at the same rhythm pace, and play it back to compare.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center gap-3 shrink-0">
+          <button id="recBtn" onclick="toggleRecording()" class="px-5 py-2.5 rounded-xl bg-terra-600 hover:bg-terra-700 text-white text-xs sm:text-sm font-semibold shadow-sm transition-all flex items-center space-x-2">
+            <i id="recIcon" class="fa-solid fa-microphone"></i>
+            <span id="recText">Record My Voice</span>
+          </button>
+          <audio id="audioPlayback" controls class="hidden h-10 rounded-lg"></audio>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- MODULE 2: TADAO ANDO'S "CHURCH OF LIGHT", SPACES & CULTURE LAB        -->
+    <!-- ===================================================================== -->
+    <section id="spaces" class="editorial-card p-6 sm:p-10 space-y-8">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between border-b border-sand-200 pb-6 gap-4">
+        <div class="space-y-2">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-pine-100 text-pine-800 text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-archway"></i>
+            <span>Module 02 • Describing Spaces, Architecture, Nature &amp; Culture</span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slateink-900">
+            From Tadao Ando's "Church of Light" to Tranquil Mountain Spots
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base max-w-3xl">
+            In the second half of our lesson, we explored how to describe <strong>spaces, materials, emotions, and cultural environments</strong>—moving from Japanese minimalist architecture to your favourite mountain spots outside Madrid and life in Hanoi.
+          </p>
+        </div>
+
+        <!-- 3 Interactive Topic Tabs -->
+        <div class="flex flex-wrap gap-2 no-print">
+          <button onclick="switchSpaceTab('ando')" id="tab-btn-ando" class="px-4 py-2.5 rounded-xl text-xs font-bold bg-slateink-900 text-white shadow-sm transition-all">
+            🏛️ 1. Church of Light (Ando)
+          </button>
+          <button onclick="switchSpaceTab('tranquil')" id="tab-btn-tranquil" class="px-4 py-2.5 rounded-xl text-xs font-semibold bg-white border border-sand-300 text-stone-700 hover:bg-sand-100 transition-all">
+            🏞️ 2. Tranquil Spots vs. Madrid
+          </button>
+          <button onclick="switchSpaceTab('vietnam')" id="tab-btn-vietnam" class="px-4 py-2.5 rounded-xl text-xs font-semibold bg-white border border-sand-300 text-stone-700 hover:bg-sand-100 transition-all">
+            🌏 3. Vietnam Pronouns &amp; Bomb Game
+          </button>
+        </div>
+      </div>
+
+      <!-- TAB 1: Tadao Ando's Church of Light -->
+      <div id="space-panel-ando" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <!-- Left Architectural Visual Diagram -->
+        <div class="lg:col-span-5 rounded-3xl bg-gradient-to-b from-slateink-950 via-slateink-900 to-stone-800 p-6 sm:p-8 text-white flex flex-col justify-between relative overflow-hidden shadow-xl border border-stone-700">
+          <!-- CSS Light Cross Effect representing Tadao Ando's Church of Light -->
+          <div class="my-6 py-10 flex flex-col items-center justify-center relative">
+            <div class="w-48 h-48 rounded-2xl bg-stone-900/90 border border-stone-700 flex items-center justify-center relative shadow-inner">
+              <!-- Vertical beam of light -->
+              <div class="w-2.5 h-36 bg-amber-100 rounded-full shadow-[0_0_30px_10px_rgba(254,243,199,0.75)]"></div>
+              <!-- Horizontal beam of light -->
+              <div class="w-28 h-2.5 bg-amber-100 rounded-full shadow-[0_0_30px_10px_rgba(254,243,199,0.75)] absolute top-14"></div>
+            </div>
+            <span class="mt-4 font-mono text-[11px] uppercase tracking-widest text-amber-200/90">
+              ✨ Tadao Ando • "The Church of Light" (Osaka, Japan)
+            </span>
+          </div>
+
+          <div class="space-y-3 bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/15">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-300">Why We Analysed This Image</span>
+              <button onclick="speakText('The Church of Light by Japanese architect Tadao Ando uses raw concrete, dark wood pews, and a monolithic cross of natural sunlight to create a functional, minimalist space for the congregation.')" class="text-xs px-2.5 py-1 rounded-lg bg-white/15 hover:bg-white/25 text-white font-semibold">
+                🔊 Listen
+              </button>
+            </div>
+            <p class="text-xs text-stone-200 leading-relaxed">
+              This is one of the most famous modern architectural works in Asia—blending Japanese <strong>minimalism</strong> and love of raw <strong>concrete</strong> with a <strong>monolithic</strong> wall pierced by a cross of pure sunlight.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right 6 Key Architectural & Religious Vocabulary Cards from Our Discussion -->
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="p-4 rounded-2xl bg-sand-50/80 border border-sand-200 space-y-1.5">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-terra-700 uppercase">1. The Cross Cutout</span>
+              <button onclick="speakText('Crucifix. The sun shines through a crucifix cut into the concrete wall.')" class="text-terra-600 hover:text-terra-800 text-xs"><i class="fa-solid fa-volume-high"></i></button>
+            </div>
+            <h4 class="font-serif text-xl font-bold text-slateink-900">Crucifix <span class="font-mono text-xs font-normal text-stone-500">/ˈkruː.sɪ.fɪks/</span></h4>
+            <p class="text-xs text-stone-600">When you said <em>"the sun is coming through... I don't know how to say..."</em> — the cross symbol in a church is a <strong>crucifix</strong> (or an architectural <strong>cross</strong>).</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-sand-50/80 border border-sand-200 space-y-1.5">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-terra-700 uppercase">2. Who Leads the Service</span>
+              <button onclick="speakText('The priest, or the reverend, leads the church service.')" class="text-terra-600 hover:text-terra-800 text-xs"><i class="fa-solid fa-volume-high"></i></button>
+            </div>
+            <h4 class="font-serif text-xl font-bold text-slateink-900">Priest / Reverend <span class="font-mono text-xs font-normal text-stone-500">/priːst/</span></h4>
+            <p class="text-xs text-stone-600">When you described <em>"the person who comes to explain the Mass"</em> — we call them the <strong>priest</strong>, <strong>reverend</strong>, or <strong>pastor</strong>.</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-sand-50/80 border border-sand-200 space-y-1.5">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-terra-700 uppercase">3. The People Attending</span>
+              <button onclick="speakText('Congregation. The seating arrangement for the congregation is very simple.')" class="text-terra-600 hover:text-terra-800 text-xs"><i class="fa-solid fa-volume-high"></i></button>
+            </div>
+            <h4 class="font-serif text-xl font-bold text-slateink-900">The Congregation <span class="font-mono text-xs font-normal text-stone-500">/ˌkɒŋ.ɡrɪˈɡeɪ.ʃən/</span></h4>
+            <p class="text-xs text-stone-600">Instead of <em>"the people who attend to the church"</em>, the group gathered for a service is <strong>the congregation</strong> (sitting on wooden benches called <strong>pews</strong>).</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-sand-50/80 border border-sand-200 space-y-1.5">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-terra-700 uppercase">4. Raw Building Material</span>
+              <button onclick="speakText('Concrete and dark wood. Concrete is used for simplicity so it does not distract from the purpose of the room.')" class="text-terra-600 hover:text-terra-800 text-xs"><i class="fa-solid fa-volume-high"></i></button>
+            </div>
+            <h4 class="font-serif text-xl font-bold text-slateink-900">Concrete &amp; Wood <span class="font-mono text-xs font-normal text-stone-500">/ˈkɒŋ.kriːt/ • /wʊd/</span></h4>
+            <p class="text-xs text-stone-600">The walls at the back and on both sides are raw <strong>concrete</strong> (<em>hormigón</em>), chosen for <strong>simplicity</strong> so nothing distracts from prayer.</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-pine-50/80 border border-pine-200 space-y-1.5">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-pine-700 uppercase">5. Practical, Not Fancy</span>
+              <button onclick="speakText('Functional. It is a very functional space—not fancy or elaborate.')" class="text-pine-600 hover:text-pine-800 text-xs"><i class="fa-solid fa-volume-high"></i></button>
+            </div>
+            <h4 class="font-serif text-xl font-bold text-slateink-900">Functional <span class="font-mono text-xs font-normal text-stone-500">/ˈfʌŋk.ʃən.əl/</span></h4>
+            <p class="text-xs text-stone-600">Designed purely for its purpose rather than being <strong>fancy</strong> or <strong>elaborate</strong>. Great word for both architecture and Business Analyst system design!</p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-terra-50/90 border border-terra-200 space-y-1.5">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-terra-700 uppercase">6. Massive &amp; Singular</span>
+              <button onclick="speakText('Monolithic. Like the monolith in 2001 A Space Odyssey, the back wall has a monolithic presence.')" class="text-terra-600 hover:text-terra-800 text-xs"><i class="fa-solid fa-volume-high"></i></button>
+            </div>
+            <h4 class="font-serif text-xl font-bold text-slateink-900">Monolithic <span class="font-mono text-xs font-normal text-stone-500">/ˌmɒn.əˈlɪθ.ɪk/</span></h4>
+            <p class="text-xs text-stone-600">From <strong>monolith</strong> (like in <em>2001: A Space Odyssey</em>): something huge, solid, singular, and unified that dominates the scale of a room. (Also used in tech: <em>monolithic architecture</em>!)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2: Tranquil Mountain Spots vs. Hectic Madrid Motorbike Life -->
+      <div id="space-panel-tranquil" class="hidden grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-pine-50/80 border-2 border-pine-300 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-full bg-pine-700 text-white text-xs font-bold">🌟 Your Favourite Word from Class</span>
+            <button onclick="speakText('Tranquil. I love spending time in tranquil mountain spots where you can hear the stream running and birds singing.')" class="w-8 h-8 rounded-lg bg-white text-pine-700 flex items-center justify-center shadow-sm"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-slateink-900">Tranquil <span class="font-mono text-sm font-normal text-pine-700">/ˈtræŋ.kwɪl/</span></h3>
+          <p class="text-xs sm:text-sm text-stone-700 leading-relaxed">
+            When you described wanting <em>"mountains with some water, fresh air, and being calmer"</em>—the exact word is <strong>tranquil</strong>. As we discussed, <em>tranquil</em> isn't dead silence (like an eerie jungle where a snake might hide!); it's <strong>peaceful but gently alive</strong> with running water, wind brushing through trees, and birds singing (like the eagles over Lewis's mum's garden in the Oxford countryside).
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-amber-50/80 border border-amber-200 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-full bg-amber-700 text-white text-xs font-bold">🇬🇧 Everyday Native Slang</span>
+            <button onclick="speakText('Spot. Where is your favourite spot in the mountains? Did you try that new burger spot on Friday?')" class="w-8 h-8 rounded-lg bg-white text-amber-700 flex items-center justify-center shadow-sm"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-slateink-900">A Spot <span class="font-mono text-sm font-normal text-amber-800">/spɒt/</span></h3>
+          <p class="text-xs sm:text-sm text-stone-700 leading-relaxed">
+            In class you asked: <em>"What do you mean by favourite space—favourite spot?"</em> Spot on! In British and American English, <strong>spot</strong> means both:
+            <br>1. <strong>A favourite place to relax:</strong> <em>"I know a tranquil spot by the river."</em>
+            <br>2. <strong>A casual restaurant/bar:</strong> <em>"Did you try that new chicken or burger spot after climbing?"</em>
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-terra-50/80 border border-terra-200 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-full bg-terra-700 text-white text-xs font-bold">🏍️ Madrid Motorbike Life</span>
+            <button onclick="speakText('Everyday life in Madrid is quite hectic and stressful. People are driving like crazy, so on a motorbike you have to stay hyper-alert to avoid accidents.')" class="w-8 h-8 rounded-lg bg-white text-terra-700 flex items-center justify-center shadow-sm"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-slateink-900">Hectic &amp; Hyper-Alert</h3>
+          <p class="text-xs sm:text-sm text-stone-700 leading-relaxed">
+            When contrasting Madrid with the mountains, remember two key upgrades:
+            <br>• Use <strong>stressful</strong> or <strong>hectic</strong> for noisy city traffic (<em>distressing</em> means emotionally traumatic/upsetting).
+            <br>• Say <strong>"People ARE driving crazy"</strong> (in English, <em>people</em> is always plural—never <em>"the people is"</em>!).
+          </p>
+        </div>
+      </div>
+
+      <!-- TAB 3: Vietnam Family Pronouns & The Bomb Defusal Game Preview -->
+      <div id="space-panel-vietnam" class="hidden grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="p-6 rounded-2xl bg-sand-50 border border-sand-200 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-full bg-slateink-900 text-white text-xs font-bold">🇻🇳 Cultural Story from Class: Hanoi &amp; Family Pronouns</span>
+            <button onclick="speakText('In Vietnam, strong community values mean you address everyone as a family member, building instant rapport.')" class="text-xs text-terra-600 font-semibold">🔊 Listen</button>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-slateink-900">Why Vietnam Feels Like One National Family</h3>
+          <p class="text-xs sm:text-sm text-stone-700 leading-relaxed">
+            When you asked Lewis about his life in downtown Hanoi (after leaving historic building restoration in Oxford/UK post-COVID), he shared how Vietnamese uses family members as everyday pronouns to build instant <strong>rapport</strong> (<code class="font-mono text-xs">/ræˈpɔː/</code>):
+          </p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 pt-1 text-xs">
+            <div class="p-2.5 rounded-xl bg-white border border-sand-200"><strong>Anh:</strong> Older brother</div>
+            <div class="p-2.5 rounded-xl bg-white border border-sand-200"><strong>Chú:</strong> Uncle (younger)</div>
+            <div class="p-2.5 rounded-xl bg-white border border-sand-200"><strong>Cô:</strong> Aunt</div>
+            <div class="p-2.5 rounded-xl bg-white border border-sand-200"><strong>Em:</strong> Younger sibling</div>
+            <div class="p-2.5 rounded-xl bg-white border border-sand-200"><strong>Bác:</strong> Senior uncle/aunt</div>
+            <div class="p-2.5 rounded-xl bg-white border border-sand-200"><strong>Fuel efficiency:</strong> 300km for $3!</div>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-gradient-to-br from-slateink-900 to-slateink-800 text-white space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="px-2.5 py-1 rounded-full bg-terra-500 text-white text-xs font-bold">💣 Coming in ~Lesson 05: High-Pressure Stress Test</span>
+            <button onclick="speakText('Keep Talking and Nobody Explodes is an asymmetrical cooperative game that tests your ability to communicate calmly in English under time pressure.')" class="text-xs text-amber-300 font-semibold">🔊 Listen</button>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-white">"Keep Talking and Nobody Explodes"</h3>
+          <p class="text-xs sm:text-sm text-stone-200 leading-relaxed">
+            Why do we play this game in future lessons? Because it is <strong>asymmetrical</strong> (<code class="font-mono text-amber-300">/ˌeɪ.sɪˈmet.rɪ.kəl/</code>): one person sees the ticking bomb, the other has the English manual, and neither can see the other's screen! You have to stay calm under pressure and describe <strong>abstract shapes</strong> (like a <em>trident</em>) and sequences in <strong>descending order</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- MODULE 3: BUSINESS ANALYST MONTHLY PRESENTATION & BOTTLENECK STUDIO   -->
+    <!-- ===================================================================== -->
+    <section id="ba-studio" class="editorial-card p-6 sm:p-10 space-y-8">
+      <div class="space-y-2 border-b border-sand-200 pb-6">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-terra-100 text-terra-800 text-xs font-bold uppercase tracking-wider">
+          <i class="fa-solid fa-chart-pie"></i>
+          <span>Module 03 • Solving Your #1 Work Trigger (1–2x / Month Presentations)</span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slateink-900">
+          Business Analyst Monthly Presentation &amp; "Bottleneck" Studio
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base max-w-3xl">
+          You mentioned in class: <em>"Once, twice a month I have to present in a meeting where I have to explain what I'm doing or what I have done during the month... and in the future I'd like the possibility of working at a company where the main language is English without any problem."</em> Below is our deep dive into <strong>bottlenecks</strong> plus an interactive 4-step monthly presentation builder!
+        </p>
+      </div>
+
+      <!-- Visual Breakdown of "Bottleneck" from Class -->
+      <div class="p-6 rounded-2xl bg-sand-50/90 border border-sand-200 space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-terra-700">Core Business Concept Taught in Class</span>
+            <h3 class="font-serif text-2xl font-bold text-slateink-900">What is a "Bottleneck" (<code class="font-mono text-base text-terra-700">/ˈbɒt.əl.nek/</code>) at Work?</h3>
+          </div>
+          <button onclick="speakText('A bottleneck is one part of the business or operations that cannot keep up with the volume of the rest of the company, slowing down the entire workflow.')" class="px-4 py-2 rounded-xl bg-terra-600 hover:bg-terra-700 text-white text-xs font-semibold shadow-sm transition-all">
+            🔊 Hear Definition
+          </button>
+        </div>
+        <p class="text-xs sm:text-sm text-stone-700 leading-relaxed">
+          In Spanish, <em>cuello de botella</em> often sounds like something is 100% blocked. In English business &amp; operations, a <strong>bottleneck</strong> is specifically <strong>a department, stage, or resource that gets narrower and cannot keep up with the pace or volume of the rest of the business</strong>:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-1">
+          <div class="p-4 rounded-xl bg-white border border-sand-200 space-y-1">
+            <span class="text-xs font-bold text-terra-700">1. Cross-Department Example</span>
+            <p class="text-xs text-stone-600"><strong>Operations</strong> and <strong>Accounts</strong> are moving fast, but <strong>Marketing</strong> is overloaded and can't keep up with the rest of the business.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white border border-sand-200 space-y-1">
+            <span class="text-xs font-bold text-pine-700">2. Production Line Example</span>
+            <p class="text-xs text-stone-600"><strong>Welding</strong> (<code class="font-mono">/ˈwel.dɪŋ/</code> joining metal) is producing at high volume, but <strong>polishing</strong> (cleaning the product) can't keep up.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-white border border-sand-200 space-y-1">
+            <span class="text-xs font-bold text-amber-700">3. Lewis's Staffing Example</span>
+            <p class="text-xs text-stone-600">Having plenty of clients, equipment, and space, but not being able to <strong>recruit, train, and onboard staff</strong> fast enough.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4-Column Interactive BA Presentation Script Builder -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <!-- Stage 1: Opening the Monthly Update -->
+        <div class="p-5 rounded-2xl bg-terra-50/50 border border-terra-200 flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-8 h-8 rounded-xl bg-terra-600 text-white font-bold text-xs flex items-center justify-center">01</span>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-terra-700">Opening the Meeting</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-slateink-900">Framing Your Update</h3>
+            <p class="text-xs text-stone-500">Click any phrase to load it into your monthly script below:</p>
+          </div>
+          <div class="space-y-2.5 text-xs">
+            <button onclick="selectBAPhrase(0, 'In today\'s monthly sync, I will walk you through what we accomplished this month and our current priorities.')" class="w-full text-left p-3 rounded-xl bg-white hover:bg-terra-50 border border-terra-100 hover:border-terra-300 transition-all group">
+              <div class="flex justify-between items-center font-semibold text-slateink-900">
+                <span>"I'll walk you through..."</span>
+                <i class="fa-solid fa-volume-high text-terra-400 group-hover:text-terra-600"></i>
+              </div>
+              <p class="text-stone-500 mt-1">"...what we accomplished this month and our priorities."</p>
+            </button>
+
+            <button onclick="selectBAPhrase(0, 'To kick off my monthly update, here is a quick overview of the business analysis tasks I have completed over the past four weeks.')" class="w-full text-left p-3 rounded-xl bg-white hover:bg-terra-50 border border-terra-100 hover:border-terra-300 transition-all group">
+              <div class="flex justify-between items-center font-semibold text-slateink-900">
+                <span>"To kick off my monthly update..."</span>
+                <i class="fa-solid fa-volume-high text-terra-400 group-hover:text-terra-600"></i>
+              </div>
+              <p class="text-stone-500 mt-1">"...here's an overview of the BA tasks completed."</p>
+            </button>
+          </div>
+        </div>
+
+        <!-- Stage 2: What I Have Done / What I'm Doing -->
+        <div class="p-5 rounded-2xl bg-pine-50/60 border border-pine-200 flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-8 h-8 rounded-xl bg-pine-600 text-white font-bold text-xs flex items-center justify-center">02</span>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-pine-700">Monthly Progress</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-slateink-900">What I Did &amp; Am Doing</h3>
+            <p class="text-xs text-stone-500">Clean contrast between Present Perfect &amp; Continuous:</p>
+          </div>
+          <div class="space-y-2.5 text-xs">
+            <button onclick="selectBAPhrase(1, 'Over the past month, we have finalized the core requirements, and right now I am focusing on mapping out the next workflow.')" class="w-full text-left p-3 rounded-xl bg-white hover:bg-pine-50 border border-pine-100 hover:border-pine-300 transition-all group">
+              <div class="flex justify-between items-center font-semibold text-slateink-900">
+                <span>"We've finalized... and right now..."</span>
+                <i class="fa-solid fa-volume-high text-pine-500 group-hover:text-pine-700"></i>
+              </div>
+              <p class="text-stone-500 mt-1">"...I'm focusing on mapping out the next workflow."</p>
+            </button>
+
+            <button onclick="selectBAPhrase(1, 'During our weekly informal gatherings with fellow Business Analysts, we aligned on the key data models we are currently building.')" class="w-full text-left p-3 rounded-xl bg-white hover:bg-pine-50 border border-pine-100 hover:border-pine-300 transition-all group">
+              <div class="flex justify-between items-center font-semibold text-slateink-900">
+                <span>"During our weekly BA gatherings..."</span>
+                <i class="fa-solid fa-volume-high text-pine-500 group-hover:text-pine-700"></i>
+              </div>
+              <p class="text-stone-500 mt-1">"...we aligned on the key models we're building."</p>
+            </button>
+          </div>
+        </div>
+
+        <!-- Stage 3: Addressing Bottlenecks -->
+        <div class="p-5 rounded-2xl bg-amber-50/60 border border-amber-200 flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-8 h-8 rounded-xl bg-amber-600 text-white font-bold text-xs flex items-center justify-center">03</span>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-amber-800">Bottlenecks &amp; Agility</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-slateink-900">Flagging Bottlenecks</h3>
+            <p class="text-xs text-stone-500">Using your exact idea from Line 120 in executive English:</p>
+          </div>
+          <div class="space-y-2.5 text-xs">
+            <button onclick="selectBAPhrase(2, 'Overall, there are no major bottlenecks right now; our team is quite dynamic, so whenever a minor bottleneck arises, we quickly adapt and find a workaround.')" class="w-full text-left p-3 rounded-xl bg-white hover:bg-amber-50 border border-amber-100 hover:border-amber-300 transition-all group">
+              <div class="flex justify-between items-center font-semibold text-slateink-900">
+                <span>"Whenever a bottleneck arises..."</span>
+                <i class="fa-solid fa-volume-high text-amber-500 group-hover:text-amber-700"></i>
+              </div>
+              <p class="text-stone-500 mt-1">"...we quickly adapt and find a workaround."</p>
+            </button>
+
+            <button onclick="selectBAPhrase(2, 'We noticed a slight bottleneck in stakeholder sign-off last week, so we streamlined the review process to keep up with demand.')" class="w-full text-left p-3 rounded-xl bg-white hover:bg-amber-50 border border-amber-100 hover:border-amber-300 transition-all group">
+              <div class="flex justify-between items-center font-semibold text-slateink-900">
+                <span>"We noticed a slight bottleneck..."</span>
+                <i class="fa-solid fa-volume-high text-amber-500 group-hover:text-amber-700"></i>
+              </div>
+              <p class="text-stone-500 mt-1">"...so we streamlined the process to keep up."</p>
+            </button>
+          </div>
+        </div>
+
+        <!-- Stage 4: Closing Strong -->
+        <div class="p-5 rounded-2xl bg-stone-100/80 border border-stone-200 flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="w-8 h-8 rounded-xl bg-slateink-900 text-white font-bold text-xs flex items-center justify-center">04</span>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-slateink-800">Next Steps</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-slateink-900">Closing the Presentation</h3>
+            <p class="text-xs text-stone-500">Invite questions with total confidence:</p>
+          </div>
+          <div class="space-y-2.5 text-xs">
+            <button onclick="selectBAPhrase(3, 'Moving into next month, our main priority is rolling out the next phase—I would be happy to take any questions or feedback.')" class="w-full text-left p-3 rounded-xl bg-white hover:bg-stone-50 border border-stone-200 hover:border-slateink-800 transition-all group">
+              <div class="flex justify-between items-center font-semibold text-slateink-900">
+                <span>"Moving into next month..."</span>
+                <i class="fa-solid fa-volume-high text-stone-400 group-hover:text-slateink-900"></i>
+              </div>
+              <p class="text-stone-500 mt-1">"...happy to take any questions or feedback."</p>
+            </button>
+
+            <button onclick="selectBAPhrase(3, 'That wraps up my monthly progress update—please let me know if you would like me to dive deeper into any specific metric.')" class="w-full text-left p-3 rounded-xl bg-white hover:bg-stone-50 border border-stone-200 hover:border-slateink-800 transition-all group">
+              <div class="flex justify-between items-center font-semibold text-slateink-900">
+                <span>"That wraps up my update..."</span>
+                <i class="fa-solid fa-volume-high text-stone-400 group-hover:text-slateink-900"></i>
+              </div>
+              <p class="text-stone-500 mt-1">"...let me know if we should dive deeper."</p>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Assembled Live Presentation Box -->
+      <div class="p-6 rounded-2xl bg-gradient-to-r from-terra-50 via-white to-pine-50 border border-sand-300 space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-terra-800">
+            <i class="fa-solid fa-wand-magic-sparkles mr-1"></i> Your Ready-to-Use Monthly BA Update Script (Click cards above to customize!)
+          </span>
+          <div class="flex gap-2 no-print">
+            <button onclick="speakAssembledBA()" class="px-4 py-1.5 rounded-xl bg-terra-600 hover:bg-terra-700 text-white text-xs font-semibold shadow-sm transition-all">
+              🔊 Listen to Full Presentation
+            </button>
+            <button onclick="copyAssembledBA()" id="copyBABtn" class="px-3.5 py-1.5 rounded-xl bg-white border border-sand-300 hover:bg-sand-50 text-slateink-900 text-xs font-semibold transition-all">
+              <i class="fa-regular fa-copy mr-1"></i> Copy Script
+            </button>
+          </div>
+        </div>
+        <p id="assembledBAText" class="font-serif text-lg sm:text-xl text-slateink-900 leading-relaxed italic bg-white/95 p-4 rounded-xl border border-sand-200">
+          "In today's monthly sync, I will walk you through what we accomplished this month and our current priorities. Over the past month, we have finalized the core requirements, and right now I am focusing on mapping out the next workflow. Overall, there are no major bottlenecks right now; our team is quite dynamic, so whenever a minor bottleneck arises, we quickly adapt and find a workaround. Moving into next month, our main priority is rolling out the next phase—I would be happy to take any questions or feedback."
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- MODULE 4: "WHAT YOU SAID" -> NATURAL BRITISH & EXECUTIVE UPGRADES     -->
+    <!-- ===================================================================== -->
+    <section id="upgrades" class="editorial-card p-6 sm:p-10 space-y-8">
+      <div class="space-y-2 border-b border-sand-200 pb-6">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold uppercase tracking-wider">
+          <i class="fa-solid fa-arrow-trend-up"></i>
+          <span>Module 04 • 10 Direct Upgrades from Your Lesson 01 Transcript</span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slateink-900">
+          "What You Said" $\rightarrow$ Natural Native Upgrades
+        </h2>
+        <p class="text-stone-600 text-sm sm:text-base max-w-3xl">
+          Here are <strong>10 exact moments from our conversation</strong> where a small tweak in word choice, preposition, or pronunciation turns a Spanish-influenced phrasing into effortless British/International English. Click any speaker icon to hear the natural upgrade!
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5" id="upgradesGrid">
+        <!-- Populated dynamically by JS -->
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- MODULE 5: MIGUEL'S 24-WORD INTERACTIVE VOCABULARY VAULT               -->
+    <!-- ===================================================================== -->
+    <section id="vocabulary" class="editorial-card p-6 sm:p-10 space-y-8">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between border-b border-sand-200 pb-6 gap-4">
+        <div class="space-y-2">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-pine-100 text-pine-800 text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-book-open-reader"></i>
+            <span>Module 05 • Personalized Vocabulary Vault (24 Words &amp; Expressions)</span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slateink-900">
+            Lesson 01 Vocabulary to Learn &amp; Master
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base max-w-2xl">
+            Every word Lewis taught you in class (<code class="font-mono text-xs text-terra-700">gathering</code>, <code class="font-mono text-xs text-terra-700">bottleneck</code>, <code class="font-mono text-xs text-terra-700">asymmetrical</code>, <code class="font-mono text-xs text-terra-700">monolithic</code>, <code class="font-mono text-xs text-terra-700">functional</code>, <code class="font-mono text-xs text-terra-700">congregation</code>, <code class="font-mono text-xs text-terra-700">spot</code>, <code class="font-mono text-xs text-terra-700">tranquil</code>) plus key Business Analyst, Architecture, and Lifestyle terms from our chat.
+          </p>
+        </div>
+
+        <!-- Search Input -->
+        <div class="relative w-full lg:w-72 no-print">
+          <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-stone-400 text-xs"></i>
+          <input type="text" id="vocabSearch" oninput="renderVocabCards()" placeholder="Search word, Spanish, or topic..."
+                 class="w-full pl-9 pr-4 py-2.5 rounded-xl bg-sand-50 border border-sand-300 text-xs sm:text-sm focus:outline-none focus:border-terra-500 focus:bg-white transition-all">
+        </div>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="flex flex-wrap gap-2 no-print">
+        <button onclick="setVocabCategory('all')" data-cat="all" class="vocab-cat-btn px-4 py-2 rounded-xl text-xs font-bold bg-slateink-900 text-white shadow-sm transition-all">
+          All Lesson Vocab (24)
+        </button>
+        <button onclick="setVocabCategory('core')" data-cat="core" class="vocab-cat-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-sand-300 text-stone-600 hover:bg-terra-50 transition-all">
+          ⭐ Explicitly Taught by Lewis (8)
+        </button>
+        <button onclick="setVocabCategory('business')" data-cat="business" class="vocab-cat-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-sand-300 text-stone-600 hover:bg-terra-50 transition-all">
+          💼 Business Analyst &amp; Work (6)
+        </button>
+        <button onclick="setVocabCategory('spaces')" data-cat="spaces" class="vocab-cat-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-sand-300 text-stone-600 hover:bg-terra-50 transition-all">
+          🏛️ Architecture &amp; Spaces (5)
+        </button>
+        <button onclick="setVocabCategory('lifestyle')" data-cat="lifestyle" class="vocab-cat-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-sand-300 text-stone-600 hover:bg-terra-50 transition-all">
+          🧗 Climbing, Madrid &amp; Small Talk (5)
+        </button>
+      </div>
+
+      <!-- Vocab Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="vocabGrid">
+        <!-- Populated dynamically by JS -->
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- MODULE 6: INTERACTIVE 3D FLIP FLASHCARDS DECK                         -->
+    <!-- ===================================================================== -->
+    <section id="flashcards" class="editorial-card p-6 sm:p-10 space-y-8 no-print">
+      <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-sand-200 pb-6 gap-4">
+        <div class="space-y-2">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-terra-100 text-terra-800 text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-clone"></i>
+            <span>Module 06 • Active Recall Trainer</span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slateink-900">
+            Interactive 3D Vocabulary Flashcards
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base max-w-2xl">
+            Click the card (or press <kbd class="px-2 py-0.5 text-xs font-mono bg-sand-100 border border-sand-300 rounded">Space</kbd>) to flip between the term/context and its full definition + example from our conversation.
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span id="flashcardCounter" class="font-mono text-xs font-bold px-3 py-1.5 rounded-xl bg-sand-100 text-slateink-900">Card 1 / 24</span>
+          <span id="masteredBadge" class="font-mono text-xs font-bold px-3 py-1.5 rounded-xl bg-pine-100 text-pine-800">0 Mastered ✓</span>
+          <button onclick="shuffleFlashcards()" class="px-3.5 py-1.5 rounded-xl bg-white border border-sand-300 hover:bg-sand-100 text-xs font-semibold text-stone-700 transition-all">
+            <i class="fa-solid fa-shuffle mr-1"></i> Shuffle
+          </button>
+        </div>
+      </div>
+
+      <!-- 3D Flip Card Container -->
+      <div class="max-w-2xl mx-auto space-y-6">
+        <div onclick="flipCurrentCard()" class="perspective-1000 cursor-pointer h-80 sm:h-88 w-full select-none">
+          <div id="flashcardInner" class="transform-style-3d relative w-full h-full rounded-3xl shadow-xl">
+            
+            <!-- Front of Card -->
+            <div class="backface-hidden absolute inset-0 rounded-3xl bg-gradient-to-br from-slateink-900 via-slateink-800 to-stone-900 text-white p-8 flex flex-col justify-between border border-stone-700">
+              <div class="flex items-center justify-between">
+                <span id="fcFrontBadge" class="px-3 py-1 rounded-full bg-terra-500/20 border border-terra-400/40 text-terra-300 text-xs font-bold">
+                  ⭐ Taught in Class
+                </span>
+                <button onclick="event.stopPropagation(); speakCurrentFlashcard()" class="w-10 h-10 rounded-xl bg-white/10 hover:bg-terra-600 text-white flex items-center justify-center transition-all" title="Listen to pronunciation">
+                  <i class="fa-solid fa-volume-high"></i>
+                </button>
+              </div>
+
+              <div class="text-center space-y-2 my-auto">
+                <h3 id="fcFrontWord" class="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-white">A gathering</h3>
+                <p id="fcFrontIpa" class="font-mono text-sm text-amber-300">/ˈɡæð.ər.ɪŋ/</p>
+                <p id="fcFrontHint" class="text-xs text-stone-300 pt-2 italic">🇪🇸 Hint: Reunión informal / quedada con amigos o compañeros</p>
+              </div>
+
+              <div class="text-center text-[11px] font-mono uppercase tracking-widest text-stone-400">
+                <i class="fa-solid fa-rotate mr-1"></i> Click card to flip for definition &amp; Miguel's example
+              </div>
+            </div>
+
+            <!-- Back of Card -->
+            <div class="backface-hidden rotate-y-180 absolute inset-0 rounded-3xl bg-white p-8 flex flex-col justify-between border-2 border-terra-400 text-slateink-900">
+              <div class="flex items-center justify-between border-b border-sand-200 pb-3">
+                <span id="fcBackWord" class="font-serif text-2xl font-bold text-terra-700">A gathering</span>
+                <button onclick="event.stopPropagation(); speakCurrentFlashcardBack()" class="px-3 py-1 rounded-xl bg-terra-100 hover:bg-terra-600 text-terra-800 hover:text-white text-xs font-semibold transition-all">
+                  🔊 Hear Example
+                </button>
+              </div>
+
+              <div class="space-y-3 my-auto">
+                <p id="fcBackDef" class="text-sm sm:text-base text-slateink-900 font-medium leading-relaxed"></p>
+                <div class="p-3.5 rounded-2xl bg-pine-50 border border-pine-200 text-xs sm:text-sm text-pine-950 italic">
+                  <strong class="not-italic text-pine-700 block text-[10px] uppercase tracking-wider mb-0.5">In Your Context:</strong>
+                  <span id="fcBackExample"></span>
+                </div>
+              </div>
+
+              <div class="text-center text-[11px] font-mono uppercase tracking-widest text-stone-400">
+                Click to flip back
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Flashcard Controls -->
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <button onclick="prevFlashcard()" class="px-5 py-2.5 rounded-xl bg-white border border-sand-300 hover:bg-sand-100 text-slateink-900 text-xs sm:text-sm font-semibold transition-all flex items-center space-x-2">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Previous</span>
+          </button>
+
+          <button onclick="markCardMastered()" class="px-6 py-2.5 rounded-xl bg-pine-600 hover:bg-pine-700 text-white text-xs sm:text-sm font-semibold shadow-sm transition-all flex items-center space-x-2">
+            <i class="fa-solid fa-check-double"></i>
+            <span>Got It! (Mark Mastered)</span>
+          </button>
+
+          <button onclick="nextFlashcard()" class="px-5 py-2.5 rounded-xl bg-slateink-900 hover:bg-slateink-800 text-white text-xs sm:text-sm font-semibold transition-all flex items-center space-x-2">
+            <span>Next Card</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- MODULE 7: INTERACTIVE 8-QUESTION LESSON 01 REVIEW QUIZ                -->
+    <!-- ===================================================================== -->
+    <section id="quiz" class="editorial-card p-6 sm:p-10 space-y-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between border-b border-sand-200 pb-6 gap-4">
+        <div class="space-y-2">
+          <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-terra-100 text-terra-800 text-xs font-bold uppercase tracking-wider">
+            <i class="fa-solid fa-bolt-lightning"></i>
+            <span>Module 07 • Test What We Learned Today</span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slateink-900">
+            Miguel's Lesson 01 Interactive Challenge
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base max-w-2xl">
+            Let's test the words and rhythm secrets from our conversation! Score 7/8 or higher to launch the celebration confetti.
+          </p>
+        </div>
+        <div class="flex items-center space-x-3 no-print">
+          <div class="px-4 py-2 rounded-2xl bg-sand-100 border border-sand-300 text-xs font-bold text-slateink-900">
+            Score: <span id="quizScoreBadge" class="text-terra-700 text-sm ml-1">0 / 8</span>
+          </div>
+          <button onclick="resetQuiz()" class="px-3.5 py-2 rounded-xl bg-white border border-sand-300 hover:bg-sand-100 text-xs font-semibold text-stone-600 transition-all">
+            <i class="fa-solid fa-rotate-right mr-1"></i> Reset
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5" id="quizContainer">
+        <!-- Populated dynamically by JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- FOOTER                                                                -->
+  <!-- ===================================================================== -->
+  <footer class="border-t border-sand-200 bg-white/70 mt-16 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
+      <div class="flex items-center space-x-3">
+        <span class="w-8 h-8 rounded-xl bg-slateink-900 text-white font-serif font-bold flex items-center justify-center text-sm">M</span>
+        <span><strong>Miguel A. — Executive &amp; Conversational English Portal</strong> • Prepared by Lewis (Lesson 01 • Oct 2026)</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="#overview" class="hover:text-terra-600 transition-colors">Back to Top ↑</a>
+        <span>•</span>
+        <a href="LESSON_01_NOTES.md" class="hover:text-terra-600 transition-colors">View Markdown Notes</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- INTERACTIVE JAVASCRIPT ENGINE                                         -->
+  <!-- ===================================================================== -->
+  <script>
+    // -----------------------------------------------------------------------
+    // 1. WEB SPEECH API VOICE SYNTHESIS (UK / US + SPEED CONTROL)
+    // -----------------------------------------------------------------------
+    let currentSpeechRate = 1.0;
+    let currentVoiceLang = 'en-GB';
+
+    function setSpeechRate(rate) {
+      currentSpeechRate = rate;
+      const slowBtn = document.getElementById('rate-slow');
+      const normBtn = document.getElementById('rate-normal');
+      if (rate < 1) {
+        slowBtn.className = 'px-2 py-0.5 rounded-full bg-terra-600 text-white font-semibold transition-colors';
+        normBtn.className = 'px-2 py-0.5 rounded-full hover:bg-terra-50 transition-colors';
+      } else {
+        normBtn.className = 'px-2 py-0.5 rounded-full bg-terra-600 text-white font-semibold transition-colors';
+        slowBtn.className = 'px-2 py-0.5 rounded-full hover:bg-terra-50 transition-colors';
+      }
+    }
+
+    function setVoiceAccent(lang) {
+      currentVoiceLang = lang;
+      const ukBtn = document.getElementById('accent-uk');
+      const usBtn = document.getElementById('accent-us');
+      if (lang === 'en-GB') {
+        ukBtn.className = 'px-2 py-0.5 rounded-full bg-slateink-900 text-white font-semibold transition-colors';
+        usBtn.className = 'px-2 py-0.5 rounded-full hover:bg-sand-100 transition-colors';
+      } else {
+        usBtn.className = 'px-2 py-0.5 rounded-full bg-slateink-900 text-white font-semibold transition-colors';
+        ukBtn.className = 'px-2 py-0.5 rounded-full hover:bg-sand-100 transition-colors';
+      }
+    }
+
+    function speakText(text, customRate = null) {
+      if (!('speechSynthesis' in window)) return;
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = currentVoiceLang;
+      utterance.rate = customRate || currentSpeechRate;
+
+      const voices = window.speechSynthesis.getVoices();
+      const preferred = voices.find(v =>
+        v.lang.includes(currentVoiceLang) &&
+        (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Daniel') || v.name.includes('Libby') || v.name.includes('Ryan'))
+      ) || voices.find(v => v.lang.includes(currentVoiceLang));
+
+      if (preferred) utterance.voice = preferred;
+      window.speechSynthesis.speak(utterance);
+    }
+
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+    }
+
+    // -----------------------------------------------------------------------
+    // 2. CHART.JS DIAGNOSTIC RADAR CHART
+    // -----------------------------------------------------------------------
+    function initRadarChart() {
+      const ctx = document.getElementById('miguelRadarChart');
+      if (!ctx || typeof Chart === 'undefined') return;
+
+      new Chart(ctx, {
+        type: 'radar',
+        data: {
+          labels: [
+            'Small Talk & Curiosity',
+            'Rhythm & Listening Ear',
+            'Connected Speech Speed',
+            'Business Analyst Vocab',
+            'Monthly Presentation Flow',
+            'Grammar Precision'
+          ],
+          datasets: [
+            {
+              label: 'Lesson 01 Baseline',
+              data: [82, 85, 62, 70, 65, 68],
+              backgroundColor: 'rgba(192, 78, 43, 0.18)',
+              borderColor: '#c04e2b',
+              pointBackgroundColor: '#c04e2b',
+              borderWidth: 2
+            },
+            {
+              label: 'Target Goal (English-First Company)',
+              data: [94, 95, 90, 92, 92, 88],
+              backgroundColor: 'rgba(57, 103, 91, 0.12)',
+              borderColor: '#39675b',
+              pointBackgroundColor: '#39675b',
+              borderDash: [5, 5],
+              borderWidth: 2
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            r: {
+              min: 40,
+              max: 100,
+              ticks: { display: false, stepSize: 20 },
+              pointLabels: {
+                font: { family: "'Plus Jakarta Sans', sans-serif", size: 11, weight: '600' },
+                color: '#1e293b'
+              },
+              grid: { color: 'rgba(213, 193, 160, 0.4)' },
+              angleLines: { color: 'rgba(213, 193, 160, 0.4)' }
+            }
+          },
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                font: { family: "'Plus Jakarta Sans', sans-serif", size: 11 },
+                boxWidth: 12
+              }
+            }
+          }
+        }
+      });
+    }
+
+    // -----------------------------------------------------------------------
+    // 3. MODULE 1: "CATS EAT MICE" RHYTHM LAB & VOICE RECORDER
+    // -----------------------------------------------------------------------
+    function speakRhythmCard(level, text) {
+      const card = document.getElementById(`rhythm-card-${level}`);
+      if (card) {
+        card.classList.add('ring-4', 'ring-terra-400');
+        setTimeout(() => card.classList.remove('ring-4', 'ring-terra-400'), 2200);
+      }
+      speakText(text);
+    }
+
+    function playAllRhythmLevels() {
+      const lines = [
+        { id: 1, text: 'Cats eat mice.' },
+        { id: 2, text: 'The cats eat mice.' },
+        { id: 3, text: 'The cats will eat the mice.' },
+        { id: 4, text: 'The cats might have eaten the mice.' }
+      ];
+      lines.forEach((item, idx) => {
+        setTimeout(() => {
+          speakRhythmCard(item.id, item.text);
+        }, idx * 2700);
+      });
+    }
+
+    let mediaRecorder = null;
+    let audioChunks = [];
+    let isRecording = false;
+
+    async function toggleRecording() {
+      const btn = document.getElementById('recBtn');
+      const icon = document.getElementById('recIcon');
+      const text = document.getElementById('recText');
+      const audioEl = document.getElementById('audioPlayback');
+
+      if (!isRecording) {
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+          mediaRecorder = new MediaRecorder(stream);
+          audioChunks = [];
+          mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
+          mediaRecorder.onstop = () => {
+            const blob = new Blob(audioChunks, { type: 'audio/webm' });
+            audioEl.src = URL.createObjectURL(blob);
+            audioEl.classList.remove('hidden');
+            stream.getTracks().forEach(t => t.stop());
+          };
+          mediaRecorder.start();
+          isRecording = true;
+          btn.className = 'px-5 py-2.5 rounded-xl bg-red-600 hover:bg-red-700 text-white text-xs sm:text-sm font-semibold shadow-sm transition-all flex items-center space-x-2 animate-pulse';
+          icon.className = 'fa-solid fa-stop';
+          text.textContent = 'Stop Recording';
+        } catch (err) {
+          alert('Please allow microphone access in your browser to record your voice!');
+        }
+      } else {
+        mediaRecorder.stop();
+        isRecording = false;
+        btn.className = 'px-5 py-2.5 rounded-xl bg-terra-600 hover:bg-terra-700 text-white text-xs sm:text-sm font-semibold shadow-sm transition-all flex items-center space-x-2';
+        icon.className = 'fa-solid fa-microphone';
+        text.textContent = 'Record Again';
+      }
+    }
+
+    // -----------------------------------------------------------------------
+    // 4. MODULE 2: SPACES & ARCHITECTURE TABS
+    // -----------------------------------------------------------------------
+    function switchSpaceTab(tabId) {
+      ['ando', 'tranquil', 'vietnam'].forEach(id => {
+        const panel = document.getElementById(`space-panel-${id}`);
+        const btn = document.getElementById(`tab-btn-${id}`);
+        if (id === tabId) {
+          panel.classList.remove('hidden');
+          btn.className = 'px-4 py-2.5 rounded-xl text-xs font-bold bg-slateink-900 text-white shadow-sm transition-all';
+        } else {
+          panel.classList.add('hidden');
+          btn.className = 'px-4 py-2.5 rounded-xl text-xs font-semibold bg-white border border-sand-300 text-stone-700 hover:bg-sand-100 transition-all';
+        }
+      });
+    }
+
+    // -----------------------------------------------------------------------
+    // 5. MODULE 3: BA MONTHLY PRESENTATION SCRIPT BUILDER
+    // -----------------------------------------------------------------------
+    const baScriptParts = [
+      "In today's monthly sync, I will walk you through what we accomplished this month and our current priorities.",
+      "Over the past month, we have finalized the core requirements, and right now I am focusing on mapping out the next workflow.",
+      "Overall, there are no major bottlenecks right now; our team is quite dynamic, so whenever a minor bottleneck arises, we quickly adapt and find a workaround.",
+      "Moving into next month, our main priority is rolling out the next phase—I would be happy to take any questions or feedback."
+    ];
+
+    function selectBAPhrase(stageIdx, phrase) {
+      baScriptParts[stageIdx] = phrase;
+      document.getElementById('assembledBAText').textContent = `"${baScriptParts.join(' ')}"`;
+      speakText(phrase);
+    }
+
+    function speakAssembledBA() {
+      speakText(baScriptParts.join(' '));
+    }
+
+    function copyAssembledBA() {
+      navigator.clipboard.writeText(baScriptParts.join(' '));
+      const btn = document.getElementById('copyBABtn');
+      btn.innerHTML = '<i class="fa-solid fa-check text-pine-600 mr-1"></i> Copied!';
+      setTimeout(() => {
+        btn.innerHTML = '<i class="fa-regular fa-copy mr-1"></i> Copy Script';
+      }, 2000);
+    }
+
+    // -----------------------------------------------------------------------
+    // 6. MODULE 4: 10 REAL TRANSCRIPT UPGRADES ("WHAT YOU SAID" -> UPGRADE)
+    // -----------------------------------------------------------------------
+    const transcriptUpgrades = [
+      {
+        topic: '🎯 Learning Goals (Lines 20–21)',
+        whatYouSaid: '"Improve my frequency / influency... and improve the small dog in everyday life."',
+        upgrade: 'Improve my fluency, pronunciation, and everyday small talk.',
+        ipa: '/ˈfluː.ən.si/ • /prəˌnʌn.siˈeɪ.ʃən/ • /ˈsmɔːl tɔːk/',
+        why: 'Watch out for "fluency" (flowing smoothly) vs. "frequency" (how often), and notice that pro-NUN-ci-a-tion has an /ʌ/ sound ("nun"), not "noun"!'
+      },
+      {
+        topic: '🧗‍♂️ Talking About Sports & Climbing (Lines 23–26)',
+        whatYouSaid: '"I\'m a young person that likes a lot of practicing sports. Actually, I\'m trying to improve my climbing ability."',
+        upgrade: 'I\'m really into sports—in fact, right now I\'m working on improving my indoor climbing ability.',
+        ipa: '/aɪm ˈrɪə.li ˈɪn.tuː spɔːts/',
+        why: 'In English we avoid "I like a lot of practicing sports". Native speakers say "I\'m really into sports" or "I go indoor climbing three to four times a week". Also, "Actually" means "in reality" (to correct a misconception); for "actualmente", use "right now" or "currently"!'
+      },
+      {
+        topic: '🎙️ Audio & Webcam Equipment (Line 38)',
+        whatYouSaid: '"My colleagues told me that it was taking the micro of the camera."',
+        upgrade: 'My colleagues told me it was picking up the built-in webcam mic (microphone).',
+        ipa: '/ˈweba.kæm maɪk/',
+        why: 'Spanish false friend! In Spanish we say "el micro", but in English "micro" only means microscopic or microwave. Short for microphone is always "mic" (pronounced /maɪk/, like Mike!).'
+      },
+      {
+        topic: '💼 Career Experience (Line 50)',
+        whatYouSaid: '"I\'m working this my fifty year... I was working in our company until five months ago."',
+        upgrade: 'I\'m in my fifth year as a Business Analyst, and I worked at another company until five months ago.',
+        ipa: '/fɪfθ jɪə/ (5th) vs. /ˈfɪf.ti/ (50)',
+        why: 'Make the final /fθ/ clear in "fifth" (5th) so it doesn\'t sound like "fifty" (50), and distinguish "another company / my previous company" from "our company".'
+      },
+      {
+        topic: '📊 Monthly Business Presentations (Line 52)',
+        whatYouSaid: '"Once, twice a month I have to present a meeting where I have to explain what I\'m doing or what I have done."',
+        upgrade: 'Once or twice a month, I give a presentation in a meeting to walk the team through what I\'ve accomplished.',
+        ipa: '/ɡɪv ə ˌprez.ənˈteɪ.ʃən ɪn ə ˈmiː.tɪŋ/',
+        why: 'Collocation rule: You "present IN a meeting" or "give/deliver a presentation" (or "chair/lead a meeting"), never "present a meeting".'
+      },
+      {
+        topic: '🌏 Asking About Someone\'s Current Life (Line 161)',
+        whatYouSaid: '"So you nowadays you are living there in Vietnam?"',
+        upgrade: 'So are you living in Vietnam these days? / Are you based in Vietnam now?',
+        ipa: '/ɑː juː ˈlɪv.ɪŋ ɪn ˌvjetˈnæm ðiːz deɪz/',
+        why: '"Nowadays" is used for big societal trends ("Nowadays people work remotely"). When asking one person about their life, "these days" or "currently / right now" sounds 10x more natural!'
+      },
+      {
+        topic: '🏛️ Describing Materials & Position (Line 221)',
+        whatYouSaid: '"The floor and seats seem like something similar to good [wood]... on the back of the room."',
+        upgrade: 'The floor and pews look like dark wood, while the walls at the back of the room are raw concrete.',
+        ipa: '/wʊd/ (wood) vs. /ɡʊd/ (good)',
+        why: 'For Spanish speakers, initial "W" in "wood" (/wʊd/) often gets a soft /ɡ/ sound like "good". Round your lips tightly for /wʊd/! Also, inside a room we say "AT the back of the room".'
+      },
+      {
+        topic: '⛪ Attending a Church or Meeting (Lines 214, 229)',
+        whatYouSaid: '"For the people who attend to the church or the person who is giving the church."',
+        upgrade: 'For the congregation attending the church service, or the priest leading the service.',
+        ipa: '/əˈtend ðə ˈsɜː.vɪs/',
+        why: 'Preposition trap: "To attend [a meeting / church / an event]" NEVER takes "to"! ("Attend to" means to deal with a problem, e.g. "I need to attend to a client issue").'
+      },
+      {
+        topic: '🐕 Talking About Your Dog\'s Age (Line 290)',
+        whatYouSaid: '"It\'s a mix of a Malinois and a pointer... He\'s about sixty [six] years old."',
+        upgrade: 'He\'s a cross between a Belgian Malinois and a Spanish Pointer, and he\'s about six years old.',
+        ipa: '/ə krɒs bɪˈtwiːn/ • /sɪks jɪəz əʊld/',
+        why: '"A cross between [Breed A] and [Breed B]" (or "a Malinois–Pointer mix") is the classic native way to describe mixed-breed dogs!'
+      },
+      {
+        topic: '🏍️ Madrid City Traffic & Plural "People" (Line 293)',
+        whatYouSaid: '"The everyday life is distressful... The people is going crazy from one place to another."',
+        upgrade: 'Everyday city life is quite stressful and hectic. People are driving like crazy from one place to another!',
+        ipa: '/ˈpiː.pəl ɑː ˈdraɪ.vɪŋ laɪk ˈkreɪ.zi/',
+        why: 'Two huge upgrades: (1) "People" is ALWAYS plural in English ("People ARE going crazy", never "The people is"). (2) Use "stressful" or "hectic" for busy city life ("distressing" = emotionally upsetting/tragic).'
+      }
+    ];
+
+    function renderUpgradesGrid() {
+      const grid = document.getElementById('upgradesGrid');
+      if (!grid) return;
+      grid.innerHTML = transcriptUpgrades.map(item => `
+        <div class="p-5 rounded-2xl bg-sand-50/60 border border-sand-200 hover:border-terra-300 transition-all flex flex-col justify-between space-y-3.5">
+          <div class="space-y-2.5">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-full bg-white border border-sand-200 text-slateink-800 text-[11px] font-bold">
+                ${item.topic}
+              </span>
+              <button onclick="speakText('${item.upgrade.replace(/'/g, "\\'")}')"
+                      class="w-8 h-8 rounded-xl bg-terra-100 hover:bg-terra-600 text-terra-700 hover:text-white transition-all flex items-center justify-center shadow-sm"
+                      title="Listen to Upgrade">
+                <i class="fa-solid fa-volume-high text-xs"></i>
+              </button>
+            </div>
+
+            <div class="p-3 rounded-xl bg-white/80 border border-red-200/70 text-xs text-stone-500 italic">
+              <span class="font-bold text-red-700/80 not-italic block text-[10px] uppercase tracking-wider mb-0.5">❌ What You Said in Class:</span>
+              ${item.whatYouSaid}
+            </div>
+
+            <div class="p-3 rounded-xl bg-pine-50/90 border border-pine-200 text-xs sm:text-sm text-slateink-900">
+              <span class="font-bold text-pine-700 block text-[10px] uppercase tracking-wider mb-0.5">✨ Natural British / Business Upgrade:</span>
+              <strong class="font-serif text-lg block leading-snug text-slateink-900">"${item.upgrade}"</strong>
+              <span class="font-mono text-[11px] text-terra-700 mt-1 block">${item.ipa}</span>
+            </div>
+          </div>
+
+          <div class="pt-2 border-t border-sand-200/80 text-[11px] text-stone-600 flex items-start space-x-2">
+            <i class="fa-solid fa-lightbulb text-amber-500 mt-0.5"></i>
+            <span>${item.why}</span>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // -----------------------------------------------------------------------
+    // 7. MODULE 5 & 6: 24-WORD VOCABULARY VAULT + 3D FLASHCARDS DATA
+    // -----------------------------------------------------------------------
+    const vocabList = [
+      // 8 CORE WORDS EXPLICITLY TAUGHT BY LEWIS IN CLASS
+      {
+        cat: 'core',
+        badge: '⭐ Taught by Lewis',
+        word: 'A gathering',
+        ipa: '/ˈɡæð.ər.ɪŋ/',
+        es: 'Reunión informal / quedada (con amigos o colegas)',
+        def: 'An informal meeting or social get-together. (While "to gather" can mean to collect things, in everyday speech we use "a gathering" for people meeting up!)',
+        example: 'We have an informal weekly gathering of Business Analysts remotely, and a Friday gathering with friends for climbing, burgers, and beers.'
+      },
+      {
+        cat: 'core',
+        badge: '⭐ Taught by Lewis',
+        word: 'A bottleneck',
+        ipa: '/ˈbɒt.əl.nek/',
+        es: 'Cuello de botella (operativo o de negocio)',
+        def: 'One part of a business, workflow, or production line that cannot keep up with the volume of the rest of the company, slowing everything down.',
+        example: 'Our recruitment and training was a bottleneck—we had plenty of clients and equipment, but couldn\'t onboard staff fast enough.'
+      },
+      {
+        cat: 'core',
+        badge: '⭐ Taught by Lewis',
+        word: 'Asymmetrical',
+        ipa: '/ˌeɪ.sɪˈmet.rɪ.kəl/',
+        es: 'Asimétrico (información o lados desiguales)',
+        def: 'Having two sides, halves, or roles that are not the same. In communication games or business, it means each person holds different information.',
+        example: 'Keep Talking and Nobody Explodes is an asymmetrical game: one person sees the bomb while the other reads the manual.'
+      },
+      {
+        cat: 'core',
+        badge: '⭐ Taught by Lewis',
+        word: 'Monolithic',
+        ipa: '/ˌmɒn.əˈlɪθ.ɪk/',
+        es: 'Monolítico (masivo, sólido, de una sola pieza)',
+        def: 'Huge, singular, solid, and unified in scale—dominating a space like the monolith in 2001: A Space Odyssey (or a monolithic software architecture).',
+        example: 'The back wall of Tadao Ando\'s Church of Light has a commanding, monolithic presence made of raw concrete.'
+      },
+      {
+        cat: 'core',
+        badge: '⭐ Taught by Lewis',
+        word: 'Functional',
+        ipa: '/ˈfʌŋk.ʃən.əl/',
+        es: 'Funcional / práctico (sin adornos innecesarios)',
+        def: 'Designed to be practical and serve a clear purpose, rather than being fancy or elaborate.',
+        example: 'The wooden benches in the Church of Light are very functional—nothing distracts from the focus of the room.'
+      },
+      {
+        cat: 'core',
+        badge: '⭐ Taught by Lewis',
+        word: 'The congregation',
+        ipa: '/ˌkɒŋ.ɡrɪˈɡeɪ.ʃən/',
+        es: 'La congregación / los fieles que asisten a la iglesia',
+        def: 'The group of people gathered together to attend a religious service in a church.',
+        example: 'The seating arrangement for the congregation is simple and minimalist, facing the priest and the crucifix of light.'
+      },
+      {
+        cat: 'core',
+        badge: '⭐ Taught by Lewis',
+        word: 'A spot',
+        ipa: '/spɒt/',
+        es: 'Un rincón / lugar favorito, o un restaurante/bar local',
+        def: 'Everyday British & American word for (1) a favourite place/space to spend time, or (2) a casual restaurant, café, or bar.',
+        example: 'Where is your favourite spot in the mountains? Also: "Hey, did you try that new burger spot after climbing on Friday?"'
+      },
+      {
+        cat: 'core',
+        badge: '⭐ Taught by Lewis',
+        word: 'Tranquil',
+        ipa: '/ˈtræŋ.kwɪl/',
+        es: 'Tranquilo, sereno y apacible (lleno de paz natural)',
+        def: 'Peacefully calm and serene, yet gently alive with nature—like hearing a mountain stream running, birds singing, and wind brushing through the trees.',
+        example: 'To escape Madrid\'s traffic noise, I love riding out to a tranquil spot in the mountains where I can hear running water.'
+      },
+
+      // 6 BUSINESS ANALYST & PROFESSIONAL WORK TERMS
+      {
+        cat: 'business',
+        badge: '💼 Business Analyst',
+        word: 'To keep up with (volume)',
+        ipa: '/tə kiːp ˈʌp wɪð/',
+        es: 'Seguir el ritmo de / dar abasto con',
+        def: 'To move, progress, or produce at the same speed as someone or something else.',
+        example: 'On the production line, welding was going well, but the polishing stage couldn\'t keep up with the volume.'
+      },
+      {
+        cat: 'business',
+        badge: '💼 Business Analyst',
+        word: 'To onboard (new staff)',
+        ipa: '/tə ˈɒn.bɔːd/',
+        es: 'Incorporar e integrar a nuevos empleados o clientes',
+        def: 'To integrate and train a new employee (or client) so they have the tools and knowledge to work effectively.',
+        example: 'It takes time to train and onboard new Business Analysts when a company is growing rapidly.'
+      },
+      {
+        cat: 'business',
+        badge: '💼 Business Analyst',
+        word: 'To walk (someone) through',
+        ipa: '/tə ˈwɔːk θruː/',
+        es: 'Explicar paso a paso (en una presentación)',
+        def: 'To guide colleagues or stakeholders step-by-step through a presentation, report, or process.',
+        example: 'Twice a month, I walk the team through what I have accomplished and what I am currently working on.'
+      },
+      {
+        cat: 'business',
+        badge: '💼 Business Analyst',
+        word: 'To build rapport',
+        ipa: '/tə bɪld ræˈpɔː/',
+        es: 'Crear buena sintonía / confianza mutua',
+        def: 'To establish a warm, harmonious, trusting relationship with colleagues, clients, or new people (note: the final "t" in rapport is silent!).',
+        example: 'Our weekly informal catch-ups help remote Business Analysts build great rapport outside of formal tasks.'
+      },
+      {
+        cat: 'business',
+        badge: '💼 Business Analyst',
+        word: 'An endeavor (endeavour)',
+        ipa: '/ɪnˈdev.ə/',
+        es: 'Emprendimiento / proyecto ambicioso / iniciativa',
+        def: 'A serious, ambitious project, enterprise, or effort (used by Lewis when describing his town-rebuilding projects).',
+        example: 'I worked as a project manager on large-scale urban restoration endeavors across the UK, Germany, and the Caribbean.'
+      },
+      {
+        cat: 'business',
+        badge: '💼 Business Analyst',
+        word: 'Descending order',
+        ipa: '/dɪˈsen.dɪŋ ˈɔː.də/',
+        es: 'Orden descendente (de mayor/arriba a menor/abajo)',
+        def: 'Arranged from highest to lowest, or top to bottom (opposite: ascending order). Essential for data analysis and our bomb-defusal game!',
+        example: 'In the presentation table, we sorted the monthly KPIs in descending order by revenue impact.'
+      },
+
+      // 5 ARCHITECTURE, MATERIALS & SPACE TERMS
+      {
+        cat: 'spaces',
+        badge: '🏛️ Architecture & Space',
+        word: 'Raw concrete & timber',
+        ipa: '/rɔː ˈkɒŋ.kriːt/ • /ˈtɪm.bə/',
+        es: 'Hormigón visto y madera',
+        def: 'Unpainted, exposed concrete (a hallmark of Tadao Ando and Japanese minimalism) paired with natural wood/timber.',
+        example: 'Japanese architecture often pairs raw concrete walls with dark timber floors for pure simplicity.'
+      },
+      {
+        cat: 'spaces',
+        badge: '🏛️ Architecture & Space',
+        word: 'Fancy vs. Elaborate',
+        ipa: '/ˈfæn.si/ • /ɪˈlæb.ər.ət/',
+        es: 'Lujoso / ostentoso vs. Elaborado / recargado',
+        def: '"Fancy" means decorative, expensive, or high-end; "elaborate" means having many complex, intricate details (the opposite of minimalist/functional).',
+        example: 'The Church of Light isn\'t fancy or elaborate—its beauty comes from simplicity and natural light.'
+      },
+      {
+        cat: 'spaces',
+        badge: '🏛️ Architecture & Space',
+        word: 'Crucifix & Priest / Reverend',
+        ipa: '/ˈkruː.sɪ.fɪks/ • /priːst/',
+        es: 'Crucifijo y Sacerdote / Reverendo',
+        def: 'A cross symbol (crucifix) and the ordained religious leader (priest in Catholic/Orthodox/Anglican churches; reverend/pastor in Protestant churches).',
+        example: 'Sunlight pours through the crucifix cut into the wall behind where the priest stands.'
+      },
+      {
+        cat: 'spaces',
+        badge: '🏛️ Architecture & Space',
+        word: 'To invoke an emotion',
+        ipa: '/tə ɪnˈvəʊk ən ɪˈməʊ.ʃən/',
+        es: 'Evocar / despertar una emoción',
+        def: 'To make someone feel a particular emotion or mental image through design, art, or atmosphere.',
+        example: 'Great architecture is designed not just for shelter, but to invoke a deep emotion when you step inside.'
+      },
+      {
+        cat: 'spaces',
+        badge: '🏛️ Architecture & Space',
+        word: 'Grandeur',
+        ipa: '/ˈɡræn.dʒə/',
+        es: 'Grandeza / majestuosidad imponente',
+        def: 'Impressive scale, majesty, and splendour (especially of mountains, nature, or historic buildings).',
+        example: 'The sheer grandeur and scale of the mountains makes the city feel tiny by comparison.'
+      },
+
+      // 5 LIFESTYLE, CLIMBING, MADRID & SMALL TALK TERMS
+      {
+        cat: 'lifestyle',
+        badge: '🧗 Lifestyle & Small Talk',
+        word: 'Small talk',
+        ipa: '/ˈsmɔːl tɔːk/',
+        es: 'Charla informal / conversación casual para romper el hielo',
+        def: 'Polite, friendly everyday conversation about hobbies, weekends, travel, or life used to connect with colleagues and meet new people.',
+        example: 'One of my main goals is to feel effortless making small talk in English when meeting new people.'
+      },
+      {
+        cat: 'lifestyle',
+        badge: '🧗 Lifestyle & Small Talk',
+        word: 'Indoor climbing ability',
+        ipa: '/ˈɪn.dɔː ˈklaɪ.mɪŋ əˈbɪl.ə.ti/',
+        es: 'Habilidad / técnica de escalada en rocódromo',
+        def: 'Your skill, strength, and technique when bouldering or climbing on indoor walls (remember: the "b" in climb/climbing is 100% silent: /klaɪm/!).',
+        example: 'I go indoor climbing three to four times a week to build my climbing ability.'
+      },
+      {
+        cat: 'lifestyle',
+        badge: '🧗 Lifestyle & Small Talk',
+        word: 'To knock out (a task/lesson)',
+        ipa: '/tə nɒk ˈaʊt/',
+        es: 'Sacar adelante / finiquitar una tarea antes del finde',
+        def: 'Informal phrasal verb: to complete a task, workout, or lesson quickly and efficiently (Lewis: "Everyone wants to knock out their lesson before the weekend!").',
+        example: 'On Fridays, I like to knock out my work tasks early so I can go climbing and grab burgers and beers.'
+      },
+      {
+        cat: 'lifestyle',
+        badge: '🧗 Lifestyle & Small Talk',
+        word: 'An eye-opener',
+        ipa: '/ən ˈaɪˌəʊ.pən.ə/',
+        es: 'Una experiencia reveladora (que te abre los ojos)',
+        def: 'An experience, trip, or realization that surprises you and teaches you something completely new about the world.',
+        example: 'Moving from England to Vietnam after COVID was a complete eye-opener for me.'
+      },
+      {
+        cat: 'lifestyle',
+        badge: '🧗 Lifestyle & Small Talk',
+        word: 'Hectic & Stressful (vs. Distressing)',
+        ipa: '/ˈhek.tɪk/ • /ˈstres.fəl/',
+        es: 'Frenético y estresante (vs. angustioso/traumático)',
+        def: '"Hectic" and "stressful" describe busy, noisy city traffic and workdays. ("Distressing" means emotionally upsetting or tragic).',
+        example: 'Rush-hour traffic in Madrid is hectic and stressful, so you have to stay alert on a motorbike.'
+      }
+    ];
+
+    let currentVocabCat = 'all';
+
+    function setVocabCategory(cat) {
+      currentVocabCat = cat;
+      document.querySelectorAll('.vocab-cat-btn').forEach(btn => {
+        if (btn.dataset.cat === cat) {
+          btn.className = 'vocab-cat-btn px-4 py-2 rounded-xl text-xs font-bold bg-slateink-900 text-white shadow-sm transition-all';
+        } else {
+          btn.className = 'vocab-cat-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white border border-sand-300 text-stone-600 hover:bg-terra-50 transition-all';
+        }
+      });
+      renderVocabCards();
+    }
+
+    function renderVocabCards() {
+      const query = (document.getElementById('vocabSearch')?.value || '').toLowerCase();
+      const grid = document.getElementById('vocabGrid');
+      if (!grid) return;
+
+      const filtered = vocabList.filter(item => {
+        const matchesCat = currentVocabCat === 'all' || item.cat === currentVocabCat;
+        const matchesQuery =
+          item.word.toLowerCase().includes(query) ||
+          item.es.toLowerCase().includes(query) ||
+          item.def.toLowerCase().includes(query) ||
+          item.example.toLowerCase().includes(query);
+        return matchesCat && matchesQuery;
+      });
+
+      grid.innerHTML = filtered.map(item => `
+        <div class="editorial-card p-5 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-full ${item.cat === 'core' ? 'bg-terra-100 text-terra-800 border border-terra-200' : 'bg-sand-100 text-slateink-800 border border-sand-200'} text-[11px] font-bold">
+                ${item.badge}
+              </span>
+              <button onclick="speakText('${item.word.replace(/'/g, "\\'")}. ${item.example.replace(/'/g, "\\'")}')"
+                      class="w-9 h-9 rounded-xl bg-terra-50 hover:bg-terra-600 text-terra-700 hover:text-white transition-all flex items-center justify-center shadow-sm"
+                      title="Listen to word & example">
+                <i class="fa-solid fa-volume-high text-xs"></i>
+              </button>
+            </div>
+
+            <div>
+              <h4 class="font-serif text-2xl font-bold text-slateink-900 leading-snug">${item.word}</h4>
+              <span class="font-mono text-xs text-terra-700 block mt-0.5">${item.ipa}</span>
+              <span class="text-[11px] text-stone-500 font-medium block mt-1">🇪🇸 ${item.es}</span>
+            </div>
+
+            <p class="text-xs text-stone-600 leading-relaxed">
+              ${item.def}
+            </p>
+          </div>
+
+          <div class="p-3 rounded-xl bg-pine-50/70 border border-pine-200/80 text-xs text-pine-950 italic">
+            <strong class="not-italic text-pine-700 block text-[10px] uppercase tracking-wider mb-0.5">Example from Our Conversation:</strong>
+            "${item.example}"
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // -----------------------------------------------------------------------
+    // 8. MODULE 6: 3D FLIP FLASHCARDS LOGIC
+    // -----------------------------------------------------------------------
+    let fcIndex = 0;
+    let fcFlipped = false;
+    let fcMastered = new Set();
+    let fcDeck = [...vocabList];
+
+    function updateFlashcardUI() {
+      const card = fcDeck[fcIndex];
+      const inner = document.getElementById('flashcardInner');
+      if (!card || !inner) return;
+
+      fcFlipped = false;
+      inner.classList.remove('rotate-y-180');
+
+      document.getElementById('fcFrontBadge').textContent = card.badge;
+      document.getElementById('fcFrontWord').textContent = card.word;
+      document.getElementById('fcFrontIpa').textContent = card.ipa;
+      document.getElementById('fcFrontHint').textContent = `🇪🇸 ${card.es}`;
+
+      document.getElementById('fcBackWord').textContent = `${card.word} (${card.ipa})`;
+      document.getElementById('fcBackDef').textContent = card.def;
+      document.getElementById('fcBackExample').textContent = `"${card.example}"`;
+
+      document.getElementById('flashcardCounter').textContent = `Card ${fcIndex + 1} / ${fcDeck.length}`;
+      document.getElementById('masteredBadge').textContent = `${fcMastered.size} Mastered ✓`;
+    }
+
+    function flipCurrentCard() {
+      const inner = document.getElementById('flashcardInner');
+      fcFlipped = !fcFlipped;
+      inner.classList.toggle('rotate-y-180', fcFlipped);
+    }
+
+    function nextFlashcard() {
+      fcIndex = (fcIndex + 1) % fcDeck.length;
+      updateFlashcardUI();
+    }
+
+    function prevFlashcard() {
+      fcIndex = (fcIndex - 1 + fcDeck.length) % fcDeck.length;
+      updateFlashcardUI();
+    }
+
+    function shuffleFlashcards() {
+      fcDeck.sort(() => Math.random() - 0.5);
+      fcIndex = 0;
+      updateFlashcardUI();
+    }
+
+    function markCardMastered() {
+      fcMastered.add(fcDeck[fcIndex].word);
+      document.getElementById('masteredBadge').textContent = `${fcMastered.size} Mastered ✓`;
+      if (fcMastered.size % 5 === 0 && typeof confetti === 'function') {
+        confetti({ particleCount: 55, spread: 60, origin: { y: 0.7 } });
+      }
+      nextFlashcard();
+    }
+
+    function speakCurrentFlashcard() {
+      speakText(fcDeck[fcIndex].word);
+    }
+
+    function speakCurrentFlashcardBack() {
+      speakText(`${fcDeck[fcIndex].word}. ${fcDeck[fcIndex].example}`);
+    }
+
+    // Keyboard navigation for flashcards
+    window.addEventListener('keydown', e => {
+      if (['INPUT', 'TEXTAREA'].includes(document.activeElement?.tagName)) return;
+      if (e.code === 'ArrowRight') nextFlashcard();
+      if (e.code === 'ArrowLeft') prevFlashcard();
+    });
+
+    // -----------------------------------------------------------------------
+    // 9. MODULE 7: 8-QUESTION INTERACTIVE REVIEW QUIZ
+    // -----------------------------------------------------------------------
+    const quizQuestions = [
+      {
+        q: '1. In our "Cats Eat Mice" rhythm exercise, how do native British speakers say "The cats might have eaten the mice" in the same time as "Cats eat mice"?',
+        options: [
+          'They pronounce every single syllable louder and pause after every word.',
+          'They stress the key content words (CATS, EATEN, MICE) and compress "might have" into /ˈmaɪtəv/ while softening the /t/ in "eaten".',
+          'They skip the words "cats" and "mice" completely.'
+        ],
+        correct: 1,
+        explanation: 'Spot on! English is stress-timed: we stress the anchor content words and "eat" / compress the helper words in between.'
+      },
+      {
+        q: '2. How do native speakers most naturally use the noun "a gathering" (/ˈɡæð.ər.ɪŋ/)?',
+        options: [
+          'Only when collecting rocks on a mountain.',
+          'For an informal meeting or social get-together (like your weekly remote BA catch-up or Friday climbing & beers with friends).',
+          'For a formal legal contract.'
+        ],
+        correct: 1,
+        explanation: 'Exactly right! While "to gather" means to collect, "a gathering" is the natural everyday word for an informal meeting or get-together.'
+      },
+      {
+        q: '3. In business and operations, what is a "bottleneck" (/ˈbɒt.əl.nek/)?',
+        options: [
+          'A stage, department, or resource (like staffing/training or polishing) that cannot keep up with the volume of the rest of the business.',
+          'A celebratory drink of beer on Friday night.',
+          'A new software feature that speeds up a database.'
+        ],
+        correct: 0,
+        explanation: 'Perfect! Just like the narrow neck of a bottle, a bottleneck is the part of an operation that slows down the overall flow.'
+      },
+      {
+        q: '4. When describing Tadao Ando\'s "Church of Light" in Japan, what does "monolithic" (/ˌmɒn.əˈlɪθ.ɪk/) mean?',
+        options: [
+          'Colorful, delicate, and made of painted glass.',
+          'Huge, solid, singular, and unified in scale—dominating the room like one massive block.',
+          'Tiny and temporary.'
+        ],
+        correct: 1,
+        explanation: 'Yes! Like the monolith in 2001: A Space Odyssey, "monolithic" describes something massive, unified, and commanding in scale.'
+      },
+      {
+        q: '5. Which word did Lewis teach you for a mountain stream where you hear water running, birds singing, and wind in the trees—peaceful, yet gently alive?',
+        options: [
+          'Distressing',
+          'Tranquil (/ˈtræŋ.kwɪl/)',
+          'Asymmetrical'
+        ],
+        correct: 1,
+        explanation: 'Bravo! "Tranquil" captures that beautiful feeling of calm, living nature away from noisy city traffic.'
+      },
+      {
+        q: '6. In British and American small talk, if someone asks "Where\'s your favourite spot?" or "Did you try that new burger spot?", what does "spot" mean?',
+        options: [
+          'A favourite place/space to hang out, or a local restaurant/bar.',
+          'A mistake in an Excel spreadsheet.',
+          'A traffic light in Madrid.'
+        ],
+        correct: 0,
+        explanation: 'Spot on! "Spot" is super common in everyday small talk for both a favourite place in nature and a great casual restaurant.'
+      },
+      {
+        q: '7. Which sentence is 100% natural when talking about your monthly Business Analyst meeting and your webcam?',
+        options: [
+          'I present a meeting twice a month, and my camera was taking the micro.',
+          'Twice a month I give a presentation in a meeting, and my laptop was picking up the built-in webcam mic (/maɪk/).',
+          'I attend to a meeting twice a month with my micro.'
+        ],
+        correct: 1,
+        explanation: 'Nailed it! We "give a presentation in a meeting" (or "attend a meeting" with no "to"), and short for microphone is always "mic" (/maɪk/)!'
+      },
+      {
+        q: '8. How do we naturally describe Madrid\'s busy traffic and drivers when you ride your motorbike?',
+        options: [
+          'The everyday life is distressful and the people is going crazy.',
+          'Everyday city life is hectic and stressful—people are driving like crazy, so you have to stay hyper-alert!',
+          'The people is very tranquil on the road.'
+        ],
+        correct: 1,
+        explanation: 'Awesome! Remember: "People ARE" (always plural in English) and "stressful / hectic" for busy city life!'
+      }
+    ];
+
+    let quizAnswered = {};
+    let quizScore = 0;
+
+    function renderQuiz() {
+      const container = document.getElementById('quizContainer');
+      if (!container) return;
+      container.innerHTML = quizQuestions.map((item, qIdx) => {
+        const answeredIdx = quizAnswered[qIdx];
+        const isDone = answeredIdx !== undefined;
+        return `
+          <div class="p-5 rounded-2xl bg-sand-50/50 border border-sand-200 flex flex-col justify-between space-y-4">
+            <h4 class="font-serif text-lg sm:text-xl font-bold text-slateink-900 leading-snug">${item.q}</h4>
+            <div class="space-y-2">
+              ${item.options.map((opt, oIdx) => {
+                let btnStyle = 'bg-white hover:bg-terra-50 border-sand-300 text-stone-700';
+                if (isDone) {
+                  if (oIdx === item.correct) {
+                    btnStyle = 'bg-pine-600 text-white border-pine-600 font-semibold';
+                  } else if (oIdx === answeredIdx) {
+                    btnStyle = 'bg-red-100 text-red-800 border-red-300';
+                  } else {
+                    btnStyle = 'bg-stone-50 text-stone-400 border-stone-200 opacity-60';
+                  }
+                }
+                return `
+                  <button onclick="answerQuiz(${qIdx}, ${oIdx})" ${isDone ? 'disabled' : ''}
+                          class="w-full text-left p-3 rounded-xl border text-xs sm:text-sm transition-all ${btnStyle}">
+                    ${opt}
+                  </button>
+                `;
+              }).join('')}
+            </div>
+            ${isDone ? `
+              <div class="p-3 rounded-xl text-xs ${answeredIdx === item.correct ? 'bg-pine-50 text-pine-900 border border-pine-200' : 'bg-amber-50 text-amber-900 border border-amber-200'}">
+                ${item.explanation}
+              </div>
+            ` : ''}
+          </div>
+        `;
+      }).join('');
+      document.getElementById('quizScoreBadge').textContent = `${quizScore} / ${quizQuestions.length}`;
+    }
+
+    function answerQuiz(qIdx, oIdx) {
+      if (quizAnswered[qIdx] !== undefined) return;
+      quizAnswered[qIdx] = oIdx;
+      if (oIdx === quizQuestions[qIdx].correct) {
+        quizScore++;
+        speakText('Spot on!');
+      } else {
+        speakText('Good try! Check the note below.');
+      }
+      renderQuiz();
+      if (Object.keys(quizAnswered).length === quizQuestions.length && quizScore >= 6 && typeof confetti === 'function') {
+        confetti({ particleCount: 100, spread: 75, origin: { y: 0.6 } });
+      }
+    }
+
+    function resetQuiz() {
+      quizAnswered = {};
+      quizScore = 0;
+      renderQuiz();
+    }
+
+    // Initialize everything on DOM load
+    window.addEventListener('DOMContentLoaded', () => {
+      initRadarChart();
+      renderUpgradesGrid();
+      renderVocabCards();
+      updateFlashcardUI();
+      renderQuiz();
+      if (typeof lucide !== 'undefined') lucide.createIcons();
+      if (typeof tippy !== 'undefined') {
+        tippy('[data-tippy-content]', { animation: 'scale', theme: 'light' });
+      }
+    });
+  </script>
+</body>
+</html>
